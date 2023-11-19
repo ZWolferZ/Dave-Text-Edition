@@ -9,9 +9,11 @@ using namespace std;
 
 void Mainmenu()
 {
+	// Maximise the console to let the player view the ascii art
 HWND consoleWindow = GetConsoleWindow();
 ShowWindow(consoleWindow, SW_MAXIMIZE);
 
+// Ascci Art title
 cout << R"(|---------------------------------------------------------------------------------------------------------|
 |                                                                                                         |
 |        #@@@%%%##                                                                                        |
@@ -50,7 +52,9 @@ string Starttext = "Press any key to begin.";
 slowType(Starttext, delayMilliseconds);
 
 cout << endl;
+
 cout << "> ";
+// Waits for user to input any command
 while (!_kbhit())
 {
 

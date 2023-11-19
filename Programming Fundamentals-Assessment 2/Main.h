@@ -1,3 +1,4 @@
+//Main.h holds all the functions used in main.cpp
 #pragma once
 #include <iostream>
 #include <thread>
@@ -8,7 +9,7 @@ using namespace std;
 
 int delayMilliseconds = 50;
 
-
+// A slow type function that writes the string provided slower
 void slowType(const string& text, int delay) 
 {
     for (char c : text) 
@@ -17,7 +18,7 @@ void slowType(const string& text, int delay)
        this_thread::sleep_for(chrono::milliseconds(delay));
     }
 }
-
+// Overloaded function to use floats for a faster slow type
 void slowType(const string& text, float delay) 
 {
     for (char c : text) {
@@ -27,6 +28,7 @@ void slowType(const string& text, float delay)
 
     
 }
+// A clear console function to give the player easier readablity
 void clearConsole() 
     {
         std::system(CLEAR_SCREEN);
