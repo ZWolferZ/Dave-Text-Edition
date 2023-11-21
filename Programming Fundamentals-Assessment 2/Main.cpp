@@ -59,6 +59,16 @@ void main()
     string Text1 = "It was a day like any other, Dave got out of bed and put on his hat.";
 
         slowType(Text1, delayMilliseconds);
+        cout << endl;
+        cout << endl;
+        string Text2 = "But... Something was wrong.";
+        slowType(Text2, delayMilliseconds);
+        cout << endl;
+        cout << endl;
+        
+        string Text3 = "Very Wrong...";
+       
+        slowType(Text3, slowdelayMilliseconds);
 }
 
 
