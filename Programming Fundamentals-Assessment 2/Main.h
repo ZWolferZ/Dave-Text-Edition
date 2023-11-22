@@ -8,7 +8,7 @@ using namespace std;
 #define CLEAR_SCREEN "cls"
 
 int delayMilliseconds = 50;
-int slowdelayMilliseconds = 150;
+int slowdelayMilliseconds = 200;
 // A slow type function that writes the string provided slower
 void slowType(const string& text, int delay) 
 {
