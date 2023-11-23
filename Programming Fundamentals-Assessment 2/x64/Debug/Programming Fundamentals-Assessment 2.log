@@ -1,4 +1,6 @@
 ﻿  Main.cpp
-C:\Users\m015485n.STUDENT\Documents\GitHub\Programming-Fundamentals-Assessment-2\Programming Fundamentals-Assessment 2\Class.h(23,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\m015485n.STUDENT\Documents\GitHub\Programming-Fundamentals-Assessment-2\Programming Fundamentals-Assessment 2\Main.cpp(14,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  Programming Fundamentals-Assessment 2.vcxproj -> C:\Users\m015485n.STUDENT\Documents\GitHub\Programming-Fundamentals-Assessment-2\x64\Debug\Programming Fundamentals-Assessment 2.exe
+C:\Users\Ryan Moakes\Documents\GitHub\Programming-Fundamentals-Assessment-2\Programming Fundamentals-Assessment 2\Class.h(23,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'Main.cpp')
+  
+C:\Users\Ryan Moakes\Documents\GitHub\Programming-Fundamentals-Assessment-2\Programming Fundamentals-Assessment 2\Main.cpp(14,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Programming Fundamentals-Assessment 2.vcxproj -> C:\Users\Ryan Moakes\Documents\GitHub\Programming-Fundamentals-Assessment-2\x64\Debug\Programming Fundamentals-Assessment 2.exe
