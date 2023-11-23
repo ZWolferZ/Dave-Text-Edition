@@ -57,7 +57,7 @@ int ClassSelect()
             continue;
         }
 
-        cout << endl;
+        
         //Error handling stuff
         if (choice < 0 || choice >= size(Classes))
         {

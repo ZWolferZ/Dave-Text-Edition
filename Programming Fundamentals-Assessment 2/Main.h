@@ -5,16 +5,17 @@
 #include <cstdlib> 
 using namespace std;
 #include <chrono>
-#define CLEAR_SCREEN "cls"
+
 
 int delayMilliseconds = 50;
 int slowdelayMilliseconds = 200;
+
 // A slow type function that writes the string provided slower
 void slowType(const string& text, int delay) 
 {
     for (char c : text) 
     {
-        cout << c << std::flush; 
+        cout << c << flush; 
        this_thread::sleep_for(chrono::milliseconds(delay));
     }
 }
@@ -22,8 +23,8 @@ void slowType(const string& text, int delay)
 void slowType(const string& text, float delay) 
 {
     for (char c : text) {
-        cout << c << std::flush;
-        std::this_thread::sleep_for(std::chrono::duration<float, std::milli>(delay));
+        cout << c << flush;
+        this_thread::sleep_for(chrono::duration<float, milli>(delay));
     }
 
     
@@ -31,5 +32,5 @@ void slowType(const string& text, float delay)
 // A clear console function to give the player easier readablity
 void clearConsole() 
     {
-        std::system(CLEAR_SCREEN);
+        system("cls");
     }
