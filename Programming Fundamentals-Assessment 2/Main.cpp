@@ -161,9 +161,9 @@ void main()
         clearConsole();
         if (choice == 0)
         {
-            int STRENGHMOD = 4;
-            int CHARAISMAMOD = 1;
-            int SPEEDMOD = -2;
+             STRENGHMOD = STRENGHMOD + 4;
+             CHARAISMAMOD = CHARAISMAMOD + 1;
+             SPEEDMOD = SPEEDMOD + -2;
             
             for (int i = 1; i < 12; i++)
             {
@@ -328,9 +328,10 @@ void main()
         }
         if (choice == 1)
         {
-            int STRENGHMOD = -2;
-            int CHARAISMAMOD = 1;
-            int SPEEDMOD = 4;
+          
+            STRENGHMOD = STRENGHMOD + -2;
+            CHARAISMAMOD = CHARAISMAMOD + 1;
+            SPEEDMOD = SPEEDMOD + 4;
             
             for (int i = 1; i < 12; i++)
             {
@@ -494,9 +495,10 @@ SetConsoleTextAttribute(hc, 1);
         }
         if (choice == 2)
         {
-            int STRENGHMOD = 0;
-            int CHARAISMAMOD = 6;
-            int SPEEDMOD = 0;
+           
+            STRENGHMOD = STRENGHMOD + 0;
+            CHARAISMAMOD = CHARAISMAMOD + 6;
+            SPEEDMOD = SPEEDMOD + 0;
            
             for (int i = 1; i < 12; i++)
             {
@@ -816,8 +818,11 @@ SetConsoleTextAttribute(hc, 1);
             slowType(Text22, delayMilliseconds);
             SetConsoleTextAttribute(hc, 7);
             cout << endl;
+            int randomnum = 0;
             int choice1 = 0;
-            while (true) 
+            bool choiceconfirm1 = false;
+            int Ablitynum = 0;
+            while (choiceconfirm1 == false) 
             {
                 cout << endl;
             cout << ">";
@@ -830,26 +835,104 @@ SetConsoleTextAttribute(hc, 1);
                 cout << "Inavlid Character / Out of range! (1 - 3)" << endl;
 
                 cout << endl;
-                continue;
+                
                 
              }
              else 
              {
-                 break;
+                 choiceconfirm1 = true;
              }
            
             }
             if (choice1 == 1)
             {
+                clearConsole();
 
+               randomnum = random(1, 20)  ;
+               
+              Ablitynum = randomnum + STRENGHMOD;
+               
+               Diceroll(randomnum);
+
+               
+
+                cout << endl;
+                cout << "Your dice roll was " << randomnum << "." << endl;
+                cout << endl;
+                cout << "Your Strength Modifer is " << STRENGHMOD << endl;
+                cout << endl;
+                cout << randomnum << " + " << STRENGHMOD << " = " << Ablitynum;
+                cout << endl;
+                cout << endl;
+                if (Ablitynum < 14)
+                {
+                    cout << "DAVE FAILED" << endl;
+                }
+                else if (Ablitynum >= 14)
+                {
+                    cout << "DAVE PASSED" << endl;
+                }
+                Sleep(2500);
             }
             if (choice1 == 2)
             {
+                clearConsole();
 
+                randomnum = random(1, 20);
+
+                Ablitynum = randomnum + CHARAISMAMOD;
+
+                Diceroll(randomnum);
+
+
+
+                cout << endl;
+                cout << "Your dice roll was " << randomnum << "." << endl;
+                cout << endl;
+                cout << "Your Charaisma Modifer is " << CHARAISMAMOD << endl;
+                cout << endl;
+                cout << randomnum << " + " << CHARAISMAMOD << " = " << Ablitynum;
+                cout << endl;
+                cout << endl;
+                if (Ablitynum < 16)
+                {
+                    cout << "DAVE FAILED" << endl;
+                }
+                else if (Ablitynum >= 16)
+                {
+                    cout << "DAVE PASSED" << endl;
+                }
+                Sleep(2500);
             }
             if (choice1 == 3)
             {
+                clearConsole();
 
+                randomnum = random(1, 20);
+
+                Ablitynum = randomnum + SPEEDMOD;
+
+                Diceroll(randomnum);
+
+
+
+                cout << endl;
+                cout << "Your dice roll was " << randomnum << "." << endl;
+                cout << endl;
+                cout << "Your Speed Modifer is " << SPEEDMOD << endl;
+                cout << endl;
+                cout << randomnum << " + " << SPEEDMOD << " = " << Ablitynum;
+                cout << endl;
+                cout << endl;
+                if (Ablitynum < 10)
+                {
+                    cout << "DAVE FAILED" << endl;
+                }
+                else if (Ablitynum >= 10)
+                {
+                    cout << "DAVE PASSED" << endl;
+                }
+                Sleep(2500);
             }
 }
 

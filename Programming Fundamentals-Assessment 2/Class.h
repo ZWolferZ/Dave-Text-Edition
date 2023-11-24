@@ -73,7 +73,7 @@ int ClassSelect()
         //End Loop
     }
 
-
+    cout << endl;
     cout << "You have selected the " << Classes[choice] << " character class..." << endl;
    
     return choice;
