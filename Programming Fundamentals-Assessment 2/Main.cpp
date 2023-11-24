@@ -748,9 +748,109 @@ SetConsoleTextAttribute(hc, 1);
             cout << endl;
             cout << endl;
             slowType(Text18, slowdelayMilliseconds);
+
             Sleep(2000);
             clearConsole();
-      
+
+            cout << R"(|-----------------------------------------------------------------------------------------------|
+|                                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   |     
+|                                                       @                                   @   |     
+|                           @@@@@@@@@                   @                                   @   |     
+|                         @@@@@@@@@@@@@                 @                                   @   |     
+|                         @@@@@@@@@@@@@@                @                                   @   |     
+|                         @@@@@@@@@@@@@@@@@@@           @                                   @   |     
+|                       @@@@@@@@@@@@@@@@@@@@@           @                                   @   |     
+|                     @@@@          @@@                 @                                   @   |     
+|                     @@             @@@                @                                   @   |     
+|                     @@             @@@                @                                   @   |     
+|                     @@             @@@                @                                   @   |     
+|                     @@@           @@@                 @                                   @   |     
+|                       @@@       @@@                   @                                   @   |     
+|                         @@@@@@@@@@                    @                                   @   |     
+|                            @@@                        @                                   @   |     
+|                            @@@                        @                           @@@@    @   |     
+|                            @@@                        @                          @    @   @   |     
+|                         @@@@@@@@                      @                          @    @   @   |     
+|                     @@@@@@@@@@@@@                     @                           @@@@    @   |    
+|                    @@@@@@@ @@@@@@@                    @                                   @   |     
+|                  @@@@@     @@@ @@@@@@                 @                                   @   |     
+|                 @@@@@      @@@  @@@@@@@               @                                   @   |     
+|                 @@@        @@@     @@@@@@             @                                   @   |     
+|                 @@@@       @@@       @@@@@            @                                   @   |     
+|                 @@@@@      @@@       @@@@             @                                   @   |     
+|                 @@@@@      @@@                        @                                   @   |     
+|                            @@@                        @                                   @   |     
+|                         @@@@@@@@@                     @                                   @   |     
+|                         @@@@@@@@@@                    @                                   @   |     
+|                        @@@@    @@@@                   @                                   @   |     
+|                      @@@@@     @@@@@                  @                                   @   |     
+|                     @@@@         @@@@                 @                                   @   |     
+|                     @@@          @@@@@                @                                   @   |     
+|  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   |
+|-----------------------------------------------------------------------------------------------|
+)" << endl;
+            cout << endl;
+            string Text19 = "What should Dave do!";
+
+            string Text20 = R"(1. Open the door and BEAT UP the landlord (STRENGTH CHECK 14))";
+            string Text21 = R"(2. Open the door and REASON WITH the landlord (CHARAISMA CHECK 16))";
+            string Text22 = R"(3. Open the door and RUN AWAY from the landlord (SPEED CHECK 10))";
+            string Text23 = R"((A D20 will be rolled to determine Dave's success, his modifers will be added to this roll))";
+            slowType(Text19, delayMilliseconds);
+            cout << endl;
+            slowType(Text23, delayMilliseconds);
+            cout << endl;
+            
+            cout << endl;
+            SetConsoleTextAttribute(hc, 4);
+            slowType(Text20, delayMilliseconds);
+            SetConsoleTextAttribute(hc, 7);
+            cout << endl;
+            cout << endl;
+            SetConsoleTextAttribute(hc, 2);
+            slowType(Text21, delayMilliseconds);
+            SetConsoleTextAttribute(hc, 7);
+            cout << endl;
+            cout << endl;
+            SetConsoleTextAttribute(hc, 1);
+            slowType(Text22, delayMilliseconds);
+            SetConsoleTextAttribute(hc, 7);
+            cout << endl;
+            int choice1 = 0;
+            while (true) 
+            {
+                cout << endl;
+            cout << ">";
+            cin >> choice1;
+
+             if (choice1 < 1 || choice1 > 3 || cin.fail())
+             {
+                cin.clear();
+                cin.ignore(1000, '\n');
+                cout << "Inavlid Character / Out of range! (1 - 3)" << endl;
+
+                cout << endl;
+                continue;
+                
+             }
+             else 
+             {
+                 break;
+             }
+           
+            }
+            if (choice1 == 1)
+            {
+
+            }
+            if (choice1 == 2)
+            {
+
+            }
+            if (choice1 == 3)
+            {
+
+            }
 }
 
 
