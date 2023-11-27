@@ -7,6 +7,8 @@ using namespace std;
 #include "Main.h"
 #include <windows.h>
 
+#pragma region MainMenu Function
+
 void Mainmenu()
 {
 	// Maximise the console to let the player view the ascii art
@@ -61,3 +63,5 @@ while (!_kbhit())
 
 }
 }
+
+#pragma endregion

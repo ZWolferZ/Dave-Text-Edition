@@ -8,6 +8,7 @@ using namespace std;
 #include <algorithm>
 #include <random>
 
+#pragma region Slowtype Functions
 
 int delayMilliseconds = 50;
 int slowdelayMilliseconds = 200;
@@ -31,12 +32,19 @@ void slowType(const string& text, float delay)
 
     
 }
+
+#pragma endregion 
+
+#pragma region Clearscreen Function
+
 // A clear console function to give the player easier readablity
 void clearConsole() 
     {
         system("cls");
     }
+#pragma endregion
 
+#pragma region Random Function
 
 //Properties for the RNG
 std::random_device device;
@@ -61,6 +69,9 @@ int random(int min, int max)
     //Sample the distribution using the generator
     return udist(randomGenerator);
 }
+#pragma endregion 
+
+#pragma region Diceroll Function
 
 int Diceroll(int num)
 {
@@ -978,3 +989,4 @@ int Diceroll(int num)
     return 0;
 
 }
+#pragma endregion 

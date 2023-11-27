@@ -12,6 +12,9 @@ using namespace std;
 
 void main()
 {
+
+#pragma region Dave starts his journey
+
     // Colour Handle Grabber
     HANDLE hc = GetStdHandle(STD_OUTPUT_HANDLE);
 
@@ -148,7 +151,7 @@ void main()
         Sleep(2000);
         cout << endl;
         
-        
+
        
         int choice = ClassSelect();
 
@@ -159,6 +162,10 @@ void main()
            
         Sleep(2000);
         clearConsole();
+        #pragma endregion
+
+#pragma region Dave chooses his class
+
         if (choice == 0)
         {
              STRENGHMOD = STRENGHMOD + 4;
@@ -704,6 +711,10 @@ SetConsoleTextAttribute(hc, 1);
         Sleep(2500);
         clearConsole();
 
+#pragma endregion
+
+#pragma region Dave's landlord 
+
         cout << R"( |------------------------------------------------------------------|                                                        
  | @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@           @@@@@@@@@          |  
  | @@@@                           @@@@       @@@@         @@@@      | 
@@ -933,7 +944,9 @@ SetConsoleTextAttribute(hc, 1);
                     cout << "DAVE PASSED" << endl;
                 }
                 Sleep(2500);
+        
             }
+#pragma endregion
 }
 
 
