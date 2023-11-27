@@ -61,17 +61,17 @@ void main()
  |            @@@                                                         @@@                                              @@@         @@@@           |  
  |                                                                                                                        @@            @@@           |
  |----------------------------------------------------------------------------------------------------------------------------------------------------|
-)" << endl;
+)" << '\n';
     // For the slowtype function to work it needs the text to be in a string varible, rather then just couting it out to console
     string Text1 = "It was a day like any other, Dave got out of bed and put on his hat.";
 
         slowType(Text1, delayMilliseconds);
-        cout << endl;
-        cout << endl;
+        cout << '\n';
+        cout << '\n';
         string Text2 = "But... Something was wrong.";
         slowType(Text2, delayMilliseconds);
-        cout << endl;
-        cout << endl;
+        cout << '\n';
+        cout << '\n';
         
         string Text3 = "Very Wrong...";
        
@@ -95,7 +95,7 @@ void main()
 .*@@=-#@@@@@@%%@*:---%@+:+@@@=:*@@::@@+::#@@@@@@#=::=*@@-:-%@@@@@%#:::*@*.=**%@@@@@@@-.#-:#@@@#-#%@@+-*@@@@@@
 .*@@@=-:...:.::::=+::::.:#@@%*-:.::+@@@@*:::::::==*@@@@@@*-::.:..:*#@@@@#:::::.:.::::+%%-::..::.::.:::#@@@@@@
 .*@@@@@@%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%@@@@@@@@@@@@@@@@%@@@@@@@@@@@@@@@@%@@@@@@@@@%@@%%@@@@@@@@@@@@@@
-.*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@)" << endl;
+.*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@)" << '\n';
 
         Sleep(2000);
 
@@ -123,7 +123,7 @@ void main()
 @@@@@@@-:=-.:.:-*#@@@@@@@@@%+=::=::=:-=-=+@@@@@@@@@@@#==:--.::=::-=:==@@@@@@**+:.--::+@@@@@@%-=.:::=#@@@@@@@@
 @@@@@@@@@%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%@@@@@@@@@@@@%%@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@)" << endl;
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@)" << '\n';
 
         Sleep(2000);
         clearConsole();
@@ -146,10 +146,10 @@ void main()
 +@@@%=::-*#*++#*%@#=+=:.*::+@@#+-*##@%*%@==::=@@@@@@@@@:.+@#-..+%@**%%+*%@#=+-.--@=.=@@%*+++#@*+-+-:-#@@@@@@@
 +@@@@@*=::::::::-:::::-%@#*-..:::..::::::.:++%@@@@@@@@@=-:.:-==--::::::-::::::#@@@%++-:::::.::::::+#@@@@@@@@@
 +@@@@@@@@%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%@@@@@@@@@@@@@%%@@@@@@@%@@@@@@@@@@@@@@@@@@%@@@@@@@@@@@@@@@@@@@@@@@
-+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@)" << endl;
++@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@)" << '\n';
 
         Sleep(2000);
-        cout << endl;
+        cout << '\n';
         
 
        
@@ -245,7 +245,7 @@ void main()
 |    @@@@@@@@@@@              @@@@@@@@@@@          |
 |    @@@@@@@@                  @@@@@@@@@@          |
 |--------------------------------------------------|
-)" << endl;
+)" << '\n';
                 Sleep(60);
                 clearConsole();
             }
@@ -319,18 +319,18 @@ void main()
 |    @@@@@@@@@@@              @@@@@@@@@@@          |
 |    @@@@@@@@                  @@@@@@@@@@          |
 |--------------------------------------------------|
-)" << endl;
+)" << '\n';
             SetConsoleTextAttribute(hc, 7);
             string Text4 = "Dave felt a surge of strength flow through him!";
             string Text5 = "He had never felt this strong before.";
             string Text6 = "Strength increased by 4, Charaisma increased by 1, Speed decreased by 2.";
             slowType(Text4, delayMilliseconds);
-            cout << endl;
+            cout << '\n';
             slowType(Text5, delayMilliseconds);
-            cout << endl;
-            cout << endl;
+            cout << '\n';
+            cout << '\n';
             slowType(Text6, delayMilliseconds);
-            cout << endl;
+            cout << '\n';
             
         }
         if (choice == 1)
@@ -413,7 +413,7 @@ void main()
 |    @@@@@@@@@@@              @@@@@@@@@@@          |
 |    @@@@@@@@                  @@@@@@@@@@          |
 |--------------------------------------------------|
-)" << endl;
+)" << '\n';
                 Sleep(60);
                 clearConsole();
             }
@@ -487,18 +487,18 @@ SetConsoleTextAttribute(hc, 1);
 |    @@@@@@@@@@@              @@@@@@@@@@@          |
 |    @@@@@@@@                  @@@@@@@@@@          |
 |--------------------------------------------------|
-)" << endl;
+)" << '\n';
             SetConsoleTextAttribute(hc, 7);
             string Text7 = "Dave felt a surge of speed flow through him!";
             string Text8 = "He had never felt this fast before.";
             string Text9 = "Strength decreased by 2, Charaisma increased by 1, Speed increased by 4.";
             slowType(Text7, delayMilliseconds);
-            cout << endl;
+            cout << '\n';
             slowType(Text8, delayMilliseconds);
-            cout << endl;
-            cout << endl;
+            cout << '\n';
+            cout << '\n';
             slowType(Text9, delayMilliseconds);
-            cout << endl;
+            cout << '\n';
         }
         if (choice == 2)
         {
@@ -580,7 +580,7 @@ SetConsoleTextAttribute(hc, 1);
 |    @@@@@@@@@@@              @@@@@@@@@@@          |
 |    @@@@@@@@                  @@@@@@@@@@          |
 |--------------------------------------------------|
-)" << endl;
+)" << '\n';
                 Sleep(60);
                 clearConsole();
             }
@@ -654,18 +654,18 @@ SetConsoleTextAttribute(hc, 1);
 |    @@@@@@@@@@@              @@@@@@@@@@@          |
 |    @@@@@@@@                  @@@@@@@@@@          |
 |--------------------------------------------------|
-)" << endl;
+)" << '\n';
             SetConsoleTextAttribute(hc, 7);
             string Text10 = "Dave felt a surge of charaisma flow through him!";
             string Text11 = "He had never felt this charasmatic before.";
             string Text12 = "Strength unchanged, Charaisma increased by 6, Speed unchanged.";
             slowType(Text10, delayMilliseconds);
-            cout << endl;
+            cout << '\n';
             slowType(Text11, delayMilliseconds);
-            cout << endl;
-            cout << endl;
+            cout << '\n';
+            cout << '\n';
             slowType(Text12, delayMilliseconds);
-            cout << endl;
+            cout << '\n';
         }
         Sleep(2000);
         clearConsole();
@@ -691,21 +691,21 @@ SetConsoleTextAttribute(hc, 1);
 |          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      |     
 |          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      |     
 |                                                                                            |   
-|--------------------------------------------------------------------------------------------|)" << endl;
+|--------------------------------------------------------------------------------------------|)" << '\n';
 
         string Text13 = "Dave's Hat was filling him with insane power!";
         string Text14 = R"("But Why?")";
         string Text15 = "Dave wanted to ponder this question,";
         string Text16 = "but was quickly brought back to reality by his landlord at his door!";
-        cout << endl;
+        cout << '\n';
         slowType(Text13, delayMilliseconds);
-        cout << endl;
-        cout << endl;
+        cout << '\n';
+        cout << '\n';
         slowType(Text14, slowdelayMilliseconds);
-        cout << endl;
-        cout << endl;
+        cout << '\n';
+        cout << '\n';
         slowType(Text15, delayMilliseconds);
-        cout << endl;
+        cout << '\n';
         
         slowType(Text16, delayMilliseconds);
         Sleep(2500);
@@ -713,7 +713,7 @@ SetConsoleTextAttribute(hc, 1);
 
 #pragma endregion
 
-#pragma region Dave's landlord 
+
 
         cout << R"( |------------------------------------------------------------------|                                                        
  | @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@           @@@@@@@@@          |  
@@ -753,13 +753,13 @@ SetConsoleTextAttribute(hc, 1);
  | @@@@                           @@@@        @@@@@     @@@@@       | 
  | @@@@                           @@@@                              | 
  | @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                              | 
- |------------------------------------------------------------------|)" << endl;
-        cout << endl;
+ |------------------------------------------------------------------|)" << '\n';
+        cout << '\n';
         string Text17 = R"("COME OUT DAVE!")";
         string Text18 = R"("I WANT MY RENT MONEY!")";
         slowType(Text17, slowdelayMilliseconds);
-            cout << endl;
-            cout << endl;
+            cout << '\n';
+            cout << '\n';
             slowType(Text18, slowdelayMilliseconds);
 
             Sleep(2000);
@@ -801,8 +801,8 @@ SetConsoleTextAttribute(hc, 1);
 |                     @@@          @@@@@                @                                   @   |     
 |  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   |
 |-----------------------------------------------------------------------------------------------|
-)" << endl;
-            cout << endl;
+)" << '\n';
+            cout << '\n';
             string Text19 = "What should Dave do!";
 
             string Text20 = R"(1. Open the door and BEAT UP the landlord (STRENGTH CHECK 14))";
@@ -810,32 +810,34 @@ SetConsoleTextAttribute(hc, 1);
             string Text22 = R"(3. Open the door and RUN AWAY from the landlord (SPEED CHECK 10))";
             string Text23 = R"((A D20 will be rolled to determine Dave's success, his modifers will be added to this roll))";
             slowType(Text19, delayMilliseconds);
-            cout << endl;
+            cout << '\n';
             slowType(Text23, delayMilliseconds);
-            cout << endl;
+            cout << '\n';
             
-            cout << endl;
+            cout << '\n';
             SetConsoleTextAttribute(hc, 4);
             slowType(Text20, delayMilliseconds);
             SetConsoleTextAttribute(hc, 7);
-            cout << endl;
-            cout << endl;
+            cout << '\n';
+            cout << '\n';
             SetConsoleTextAttribute(hc, 2);
             slowType(Text21, delayMilliseconds);
             SetConsoleTextAttribute(hc, 7);
-            cout << endl;
-            cout << endl;
+            cout << '\n';
+            cout << '\n';
             SetConsoleTextAttribute(hc, 1);
             slowType(Text22, delayMilliseconds);
             SetConsoleTextAttribute(hc, 7);
-            cout << endl;
+            cout << '\n';
             int randomnum = 0;
             int choice1 = 0;
             bool choiceconfirm1 = false;
             int Ablitynum = 0;
+            string DAVEFAIL = "DAVE FAILED";
+            string DAVEPASS = "DAVE PASSED";
             while (choiceconfirm1 == false) 
             {
-                cout << endl;
+                cout << '\n';
             cout << ">";
             cin >> choice1;
 
@@ -843,9 +845,9 @@ SetConsoleTextAttribute(hc, 1);
              {
                 cin.clear();
                 cin.ignore(1000, '\n');
-                cout << "Inavlid Character / Out of range! (1 - 3)" << endl;
+                cout << "Inavlid Character / Out of range! (1 - 3)" << '\n';
 
-                cout << endl;
+                cout << '\n';
                 
                 
              }
@@ -867,23 +869,27 @@ SetConsoleTextAttribute(hc, 1);
 
                
 
-                cout << endl;
-                cout << "Your dice roll was " << randomnum << "." << endl;
-                cout << endl;
-                cout << "Your Strength Modifer is " << STRENGHMOD << endl;
-                cout << endl;
+                cout << '\n';
+                cout << "Your dice roll was " << randomnum << "." << '\n';
+                cout << '\n';
+                cout << "Your Strength Modifer is " << STRENGHMOD << '\n';
+                cout << '\n';
                 cout << randomnum << " + " << STRENGHMOD << " = " << Ablitynum;
-                cout << endl;
-                cout << endl;
+                cout << '\n';
+                cout << '\n';
                 if (Ablitynum < 14)
                 {
-                    cout << "DAVE FAILED" << endl;
+                    slowType(DAVEFAIL, delayMilliseconds);
+                    Sleep(2500);
+                    clearConsole();
                 }
                 else if (Ablitynum >= 14)
                 {
-                    cout << "DAVE PASSED" << endl;
+                    slowType(DAVEPASS, delayMilliseconds);
+                    Sleep(2500);
+                    clearConsole();
                 }
-                Sleep(2500);
+                
             }
             if (choice1 == 2)
             {
@@ -897,23 +903,27 @@ SetConsoleTextAttribute(hc, 1);
 
 
 
-                cout << endl;
-                cout << "Your dice roll was " << randomnum << "." << endl;
-                cout << endl;
-                cout << "Your Charaisma Modifer is " << CHARAISMAMOD << endl;
-                cout << endl;
+                cout << '\n';
+                cout << "Your dice roll was " << randomnum << "." << '\n';
+                cout << '\n';
+                cout << "Your Charaisma Modifer is " << CHARAISMAMOD << '\n';
+                cout << '\n';
                 cout << randomnum << " + " << CHARAISMAMOD << " = " << Ablitynum;
-                cout << endl;
-                cout << endl;
+                cout << '\n';
+                cout << '\n';
                 if (Ablitynum < 16)
                 {
-                    cout << "DAVE FAILED" << endl;
+                    slowType(DAVEFAIL, delayMilliseconds);
+                    Sleep(2500);
+                    clearConsole();
                 }
                 else if (Ablitynum >= 16)
                 {
-                    cout << "DAVE PASSED" << endl;
+                    slowType(DAVEPASS, delayMilliseconds);
+                    Sleep(2500);
+                    clearConsole();
                 }
-                Sleep(2500);
+                
             }
             if (choice1 == 3)
             {
@@ -927,26 +937,30 @@ SetConsoleTextAttribute(hc, 1);
 
 
 
-                cout << endl;
-                cout << "Your dice roll was " << randomnum << "." << endl;
-                cout << endl;
-                cout << "Your Speed Modifer is " << SPEEDMOD << endl;
-                cout << endl;
+                cout << '\n';
+                cout << "Your dice roll was " << randomnum << "." << '\n';
+                cout << '\n';
+                cout << "Your Speed Modifer is " << SPEEDMOD << '\n';
+                cout << '\n';
                 cout << randomnum << " + " << SPEEDMOD << " = " << Ablitynum;
-                cout << endl;
-                cout << endl;
+                cout << '\n';
+                cout << '\n';
                 if (Ablitynum < 10)
                 {
-                    cout << "DAVE FAILED" << endl;
+                    slowType(DAVEFAIL, delayMilliseconds);
+                    Sleep(2500);
+                    clearConsole();
                 }
                 else if (Ablitynum >= 10)
                 {
-                    cout << "DAVE PASSED" << endl;
+                    slowType(DAVEPASS, delayMilliseconds);
+                    Sleep(2500);
+                    clearConsole();
                 }
-                Sleep(2500);
+                
         
             }
-#pragma endregion
+
 }
 
 

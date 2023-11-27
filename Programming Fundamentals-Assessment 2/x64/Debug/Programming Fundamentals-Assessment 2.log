@@ -3,5 +3,4 @@ C:\Users\Ryan Moakes\Documents\GitHub\Programming-Fundamentals-Assessment-2\Prog
   (compiling source file 'Main.cpp')
   
 C:\Users\Ryan Moakes\Documents\GitHub\Programming-Fundamentals-Assessment-2\Programming Fundamentals-Assessment 2\Main.cpp(14,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
-C:\Users\Ryan Moakes\Documents\GitHub\Programming-Fundamentals-Assessment-2\Programming Fundamentals-Assessment 2\Main.cpp(716,20): error C2001: newline in constant
-C:\Users\Ryan Moakes\Documents\GitHub\Programming-Fundamentals-Assessment-2\Programming Fundamentals-Assessment 2\Main.cpp(716,20): error C2015: too many characters in constant
+  Programming Fundamentals-Assessment 2.vcxproj -> C:\Users\Ryan Moakes\Documents\GitHub\Programming-Fundamentals-Assessment-2\x64\Debug\Programming Fundamentals-Assessment 2.exe
