@@ -31,17 +31,17 @@ int ClassSelect()
     //Loop Start
     while (notselected == false)
     {
-        cout << "Please choose a character class below: " << endl;
+        cout << "Please choose a character class below: " << '\n';
 
         int i = 0;
         //Iterate through class list, like a smart person
         while (i != classessize)
         {
-            cout << i << ". " << Classes[i] << endl;
+            cout << i << ". " << Classes[i] << '\n';
             i++;
         }
 
-        cout << endl;
+        cout << '\n';
         cout << ">";
         //Error handling stuff
         if (!(cin >> choice))
@@ -50,10 +50,10 @@ int ClassSelect()
 
             cin.ignore(1000, '\n');
 
-            cout << endl;
+            cout << '\n';
 
-            cout << "Invalid input! Please enter a valid number." << endl;
-            cout << endl;
+            cout << "Invalid input! Please enter a valid number." << '\n';
+            cout << '\n';
             continue;
         }
 
@@ -62,9 +62,9 @@ int ClassSelect()
         if (choice < 0 || choice >= size(Classes))
         {
 
-            cout << "Out of range! (0 - " << size(Classes) - 1 << ")" << endl;
+            cout << "Out of range! (0 - " << size(Classes) - 1 << ")" << '\n';
 
-            cout << endl;
+            cout << '\n';
 
             continue;
         }
@@ -73,8 +73,8 @@ int ClassSelect()
         //End Loop
     }
 
-    cout << endl;
-    cout << "You have selected the " << Classes[choice] << " character class..." << endl;
+    cout << '\n';
+    cout << "You have selected the " << Classes[choice] << " character class..." << '\n';
    
     return choice;
     

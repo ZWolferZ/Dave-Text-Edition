@@ -8,6 +8,7 @@ using namespace std;
 #include <algorithm>
 #include <random>
 
+
 #pragma region Slowtype Functions
 
 int delayMilliseconds = 50;
@@ -1076,6 +1077,86 @@ int Diceroll(int num)
 |---------------------------------------------------------------------------------------|)" << '\n';
     }
     return 0;
+
+
+}
+
+#pragma endregion
+
+#pragma region GetDistanceBetweenPoints
+//Inisitalises Stuct
+struct Vector2
+{
+    double X;
+    double Y;
+
+    Vector2(double X, double Y) : X(X), Y(Y) {}
+
+};
+
+//Inisitlises function, calls information from struct
+float GetDistanceBetweenPoints(double xComponents[2], double yComponents[2])
+{
+    Vector2 v1(xComponents[0], yComponents[0]);
+    Vector2 v2(xComponents[1], yComponents[1]);
+
+    return sqrt((v2.X - v1.X) * (v2.X - v1.X) + (v2.Y - v1.Y) * (v2.Y - v1.Y));
+
+}
+
+void Vector2Calculator()
+{
+    // Changed the floats to doubles, in case the user puts in a big number
+    double xComponents[2] = { 0.0f, 0.0f };
+    double yComponents[2] = { 0.0f, 0.0f };
+
+    // Start of main loop, so the user does not have to keep starting and closing the program to use the calculator
+    while (true)
+    {
+        // Cool seperation line
+        cout << "---------------------------------------------------------" << '\n';
+
+        for (int i = 0; i < 2; )
+        {
+            std::cout << "Please enter the X component of vector " << (i + 1) << ": ";
+            std::cin >> xComponents[i];
+
+            std::cout << "Please enter the Y component of vector " << (i + 1) << ": ";
+            std::cin >> yComponents[i];
+
+            cout << '\n';
+            //Error Handling 
+            if (cin.fail())
+            {
+                cin.clear();
+                cin.ignore(1000, '\n');
+                cout << '\n';
+                cout << "Invalid input! Please enter a valid number." << '\n';
+                cout << "---------------------------------------------------------" << '\n';
+                cout << '\n';
+
+            }
+            else
+            {
+                // Only increment if input was good
+                i++;
+            }
+        }
+
+
+
+        // Insitalises the distnace and sets it to the calcualte distance function
+        double distance = GetDistanceBetweenPoints(xComponents, yComponents);
+
+        // This is the most cooked cout line I have ever written
+        cout << "Distance between points " << "(" << xComponents[0] << ", " << yComponents[0] << ") " << "and " << "(" << xComponents[1] << ", " << yComponents[1] << ") " << "is: " << distance << '\n';
+
+        // I'm not sure if a clear of the cin is needed but I think so
+        cin.clear();
+        cout << '\n';
+
+    }
+
 
 
 }

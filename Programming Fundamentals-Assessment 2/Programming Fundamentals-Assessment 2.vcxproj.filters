@@ -29,5 +29,8 @@
     <ClInclude Include="Class.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="LandlordOutcomes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

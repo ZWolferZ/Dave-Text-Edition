@@ -7,6 +7,7 @@ using namespace std;
 #include <windows.h>
 #include "Main Menu.h"
 #include "Class.h"
+#include "LandlordOutcomes.h"
 
 
 
@@ -757,10 +758,12 @@ SetConsoleTextAttribute(hc, 1);
         cout << '\n';
         string Text17 = R"("COME OUT DAVE!")";
         string Text18 = R"("I WANT MY RENT MONEY!")";
+        SetConsoleTextAttribute(hc, 12);
         slowType(Text17, slowdelayMilliseconds);
             cout << '\n';
             cout << '\n';
             slowType(Text18, slowdelayMilliseconds);
+            SetConsoleTextAttribute(hc, 7);
 
             Sleep(2000);
             clearConsole();
@@ -835,6 +838,7 @@ SetConsoleTextAttribute(hc, 1);
             int Ablitynum = 0;
             string DAVEFAIL = "DAVE FAILED";
             string DAVEPASS = "DAVE PASSED";
+            bool Davefail1 = false;
             while (choiceconfirm1 == false) 
             {
                 cout << '\n';
@@ -880,14 +884,16 @@ SetConsoleTextAttribute(hc, 1);
                 if (Ablitynum < 14)
                 {
                     slowType(DAVEFAIL, delayMilliseconds);
-                    Sleep(2500);
+                    Sleep(5000);
                     clearConsole();
+                    Davefail1 = true;
                 }
                 else if (Ablitynum >= 14)
                 {
                     slowType(DAVEPASS, delayMilliseconds);
-                    Sleep(2500);
+                    Sleep(5000);
                     clearConsole();
+                    LandlordSTRENGTH();
                 }
                 
             }
@@ -914,14 +920,16 @@ SetConsoleTextAttribute(hc, 1);
                 if (Ablitynum < 16)
                 {
                     slowType(DAVEFAIL, delayMilliseconds);
-                    Sleep(2500);
+                    Sleep(5000);
                     clearConsole();
+                    Davefail1 = true;
                 }
                 else if (Ablitynum >= 16)
                 {
                     slowType(DAVEPASS, delayMilliseconds);
-                    Sleep(2500);
+                    Sleep(5000);
                     clearConsole();
+                    LandlordCHARISMA();
                 }
                 
             }
@@ -948,13 +956,14 @@ SetConsoleTextAttribute(hc, 1);
                 if (Ablitynum < 10)
                 {
                     slowType(DAVEFAIL, delayMilliseconds);
-                    Sleep(2500);
+                    Sleep(5000);
                     clearConsole();
+                    Davefail1 = true;
                 }
                 else if (Ablitynum >= 10)
                 {
                     slowType(DAVEPASS, delayMilliseconds);
-                    Sleep(2500);
+                    Sleep(5000);
                     clearConsole();
                 }
                 
