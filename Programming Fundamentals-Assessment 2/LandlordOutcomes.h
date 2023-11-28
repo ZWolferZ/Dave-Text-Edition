@@ -1,7 +1,8 @@
-#pragma once
+/*#pragma once
 #include <iostream>
 #include "Main.h"
 #include <windows.h>
+
 using namespace std;
 
 // Colour Handle Grabber
@@ -144,3 +145,4 @@ void LandlordSPEED()
 	cout << R"()" << '\n';
 }
 
+*/

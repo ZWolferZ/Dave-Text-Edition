@@ -32,5 +32,8 @@
     <ClInclude Include="LandlordOutcomes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="LandlordFail.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
