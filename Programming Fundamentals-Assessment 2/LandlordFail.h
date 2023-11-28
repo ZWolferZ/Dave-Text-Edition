@@ -1,4 +1,4 @@
-/*#pragma once
+#pragma once
 #include <iostream>
 #include "Main.h"
 #include <windows.h>
@@ -192,4 +192,3 @@ void LandlordFAIL()
 	clearConsole();
 
 }
-*/
