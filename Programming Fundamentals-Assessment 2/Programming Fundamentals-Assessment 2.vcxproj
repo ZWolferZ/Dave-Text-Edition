@@ -131,7 +131,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Class.h" />
-    <ClInclude Include="LandlordFail.h" />
     <ClInclude Include="LandlordOutcomes.h" />
     <ClInclude Include="Main Menu.h" />
     <ClInclude Include="Main.h" />

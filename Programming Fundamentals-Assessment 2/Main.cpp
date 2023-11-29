@@ -838,7 +838,7 @@ SetConsoleTextAttribute(hc, 1);
             int Ablitynum = 0;
             string DAVEFAIL = "DAVE FAILED";
             string DAVEPASS = "DAVE PASSED";
-            bool Davefail1 = false;
+            
             while (choiceconfirm1 == false) 
             {
                 cout << '\n';
@@ -886,7 +886,7 @@ SetConsoleTextAttribute(hc, 1);
                     slowType(DAVEFAIL, delayMilliseconds);
                     Sleep(5000);
                     clearConsole();
-                    Davefail1 = true;
+                    LandlordFAIL();
                 }
                 else if (Ablitynum >= 14)
                 {
@@ -922,7 +922,7 @@ SetConsoleTextAttribute(hc, 1);
                     slowType(DAVEFAIL, delayMilliseconds);
                     Sleep(5000);
                     clearConsole();
-                    Davefail1 = true;
+                    LandlordFAIL();
                 }
                 else if (Ablitynum >= 16)
                 {
@@ -958,13 +958,14 @@ SetConsoleTextAttribute(hc, 1);
                     slowType(DAVEFAIL, delayMilliseconds);
                     Sleep(5000);
                     clearConsole();
-                    Davefail1 = true;
+                    LandlordFAIL();
                 }
                 else if (Ablitynum >= 10)
                 {
                     slowType(DAVEPASS, delayMilliseconds);
                     Sleep(5000);
                     clearConsole();
+                  
                 }
                 
         

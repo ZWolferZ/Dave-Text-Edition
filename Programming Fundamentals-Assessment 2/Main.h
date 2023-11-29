@@ -1104,15 +1104,14 @@ float GetDistanceBetweenPoints(double xComponents[2], double yComponents[2])
 
 }
 
-void Vector2Calculator()
+float Vector2Calculator()
 {
     // Changed the floats to doubles, in case the user puts in a big number
     double xComponents[2] = { 0.0f, 0.0f };
     double yComponents[2] = { 0.0f, 0.0f };
 
-    // Start of main loop, so the user does not have to keep starting and closing the program to use the calculator
-    while (true)
-    {
+    
+    
         // Cool seperation line
         cout << "---------------------------------------------------------" << '\n';
 
@@ -1155,9 +1154,9 @@ void Vector2Calculator()
         cin.clear();
         cout << '\n';
 
-    }
+    
 
-
+    return distance;
 
 }
 

@@ -142,6 +142,257 @@ void LandlordCHARISMA()
 	
 void LandlordSPEED()
 {
-	cout << R"()" << '\n';
+	cout << R"(|---------------------------------------------------------------------------|                                                                           
+|            @@@@@@@@@@@                                                    |
+|         @@@@@@@@@@@@@@@@                                                  | 
+|       @@@@@@@       @@@@@@                             @@@@@@@@@@         | 
+|      @@@@@@@          @@@@@                          @@@@@@@@@@@@@@       |
+|     @@@@                @@@@                         @@@@@@@@@@@@@@       |
+|     @@@@   @@@@@  @@@@   @@@@                        @@@@@@@@@@@@@@@@@@@@ | 
+|     @@@    @@@    @@@    @@@@                        @@@@@@@@@@@@@@@@@@@@ |
+|     @@@                  @@@@                      @@@         @@@        |
+|     @@@                  @@@@                    @@@             @@       |
+|     @@@                  @@@@                    @@@             @@       |  
+|     @@@@                 @@@@                    @@@             @@       |
+|     @@@@@                @@@@                    @@@            @@        |
+|      @@@@@              @@@@                       @@@         @@         |
+|        @@@@@        @@@@@@                           @@@@@@@@@@@          |
+|           @@@@@@@@@@@@                                   @@@              |
+|               @@@@                                       @@@              |
+|               @@@@                                       @@@              |
+|               @@@@                                       @@@              |
+|               @@@@                                 @@@@@@@@@@@@@@         |
+|               @@@@                               @@@@@@@@@@@@@@@@         |
+|               @@@@                               @@@@@   @@@ @@@@         |
+|               @@@@                               @@@@@@  @@@              |
+|               @@@@                                 @@@@  @@@              |
+|               @@@@                                 @@@@  @@@              |
+|               @@@@                                       @@@              |
+|               @@@@                                       @@@              |
+|               @@@@                                       @@@              |
+|               @@@@                                       @@@              |
+|              @@@@@@                                      @@@              |
+|             @@@@@@@@                                 @@@@@@@@             |
+|            @@@@@@@@@@                              @@@@    @@@@@          |
+|          @@@@@@ @@@@@@                            @@@     @@@@@@          |
+|          @@@@@@ @@@@@@@                            @@@                    |
+|---------------------------------------------------------------------------|)" << '\n';
+	string Text1 = "Dave, like the flash,";
+	string Text2 = "ran away from his problems";
+	string Text3 = R"("I'll FIND YOU DAVE, YOU CANT RUN FOREVER")";
+	string text4 = " - The landlord Boomed, loudly";
+	cout << '\n';
+	slowType(Text1, delayMilliseconds);
+	cout << '\n';
+	slowType(Text2, delayMilliseconds);
+	cout << '\n';
+	cout << '\n';
+	SetConsoleTextAttribute(hc, 12);
+	slowType(Text3, slowdelayMilliseconds);
+	SetConsoleTextAttribute(hc, 7);
+	slowType(text4, delayMilliseconds);
+	cout << '\n';
+	cout << '\n';
+
+	Sleep(2500);
+
+	//Endl Line to clear buffer
+	cout << endl;
+
+	clearConsole();
 }
 
+void LandlordFAIL()
+{
+	cout << R"(|------------------------------------------------------------------|                                                                       
+|                                              @@@@@@@@@           |     
+|                                           @@@@@@@@@@@@@@@        |     
+|                                         @@@@@@@      @@@@@@      |     
+|              @@@@@@@@@@@               @@@@@@@        @@@@@@     |     
+|             @@@@@@@@@@@@@@             @@@               @@@     |     
+|             @@@@@@@@@@@@@@            @@@    @@@@   @@@   @@@    |     
+|             @@@@@@@@@@@@@@@@@@@@@    @@@     @@@@   @@@@  @@@@   |     
+|           @@          @@             @@@     @@     @@    @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@@                 @@@@   |     
+|         @@@@          @@@@            @@@@@               @@@@   |     
+|           @@          @@               @@@@@           @@@@@@    |     
+|             @@@@@@@@@@                   @@@@@@@@@@@@@@@@@@      |     
+|                 @@                         @@@@@@@@@@@@@         |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|           @@@@@@@@@@@@@@                       @@@@@             |     
+|         @@@@    @@  @@@@                       @@@@@             |     
+|         @@@@    @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|             @@@@@@@@                          @@@@@@             |     
+|           @@@@    @@@@@                      @@@@ @@@            |     
+|           @@      @@@@@@                   @@@@@  @@@@@          |    
+|           @@@@                            @@@@@   @@@@@@         | 
+|                                          @@@@@@   @@@@@@         |  
+|                                          @@@@@@   @@@@@@         |   
+|------------------------------------------------------------------|)" << '\n';
+	string Text1 = "Dave, tried to do his action but FAILED,";
+	string Text2 = "the landlord stood in his way!";
+	string Text3 = R"("Stop right there dave!")";
+	string text4 = " - The landlord spoke, forcefully";
+	cout << '\n';
+	slowType(Text1, delayMilliseconds);
+	cout << '\n';
+	slowType(Text2, delayMilliseconds);
+	cout << '\n';
+	cout << '\n';
+	SetConsoleTextAttribute(hc, 12);
+	slowType(Text3, slowdelayMilliseconds);
+	SetConsoleTextAttribute(hc, 7);
+	slowType(text4, delayMilliseconds);
+	cout << '\n';
+	cout << '\n';
+	Sleep(2500);
+	clearConsole();
+	cout << R"(
+|------------------------------------------------------|
+|             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     |        
+|             @    @@@@@@@@@@@@@@@@@@@@@@@@@@    @     |        
+|             @  @@                          @@  @     |        
+|             @  @@                           @  @     |        
+|             @  @@                           @  @     |        
+|             @  @@                           @  @     |        
+|             @  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  @     |        
+|             @                                  @     |        
+|             @    @@@@@@@@@@@@@@@@@@@@@@@@@@    @     |        
+|             @  @@                          @@  @     |        
+|             @  @@ @@@@@ @@@@@@ @@@@@ @@@@@@ @  @     |        
+|             @  @@ @  @@ @@  @@ @   @ @@  @@ @  @     |        
+|             @  @@ @@@@@ @@@@@  @@@@@  @@@@  @  @     |        
+|             @  @@ @@@@   @@@@   @@@   @@@@  @  @     |        
+|             @  @@ @  @@ @@  @@ @  @@ @@  @@ @  @     |        
+|             @  @@ @@ @@ @@  @@ @@ @@ @@  @@ @  @     |        
+|             @  @@                           @  @     |        
+|             @  @@ @@@@@ @@@@@  @@@@@ @@@@@@ @  @     |        
+|             @  @@ @  @@ @@  @@ @   @ @@  @@ @  @     |        
+|             @  @@ @@@@@ @@@@@  @@@@@ @@@@@@ @  @     |        
+|             @  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  @     |        
+|             @                                  @     |        
+|             @                                  @     |        
+|             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     |
+|------------------------------------------------------|
+)" << '\n';
+
+	string text5 = R"("You owe me the distance between vector2 points (4,6) and points (19,10))";
+	string text6 = " - The landlord exclaimed";
+	SetConsoleTextAttribute(hc, 12);
+	slowType(text5, delayMilliseconds);
+	SetConsoleTextAttribute(hc, 7);
+	slowType(text6, delayMilliseconds);
+	cout << '\n';
+	cout << '\n';
+	string text7 = "Dave brought out his handy vector2 distance calculator,";
+
+	string text8 = "to work out his rent from the vectors ";
+	slowType(text7, delayMilliseconds);
+	cout << '\n';
+	slowType(text8, delayMilliseconds);
+	bool correct = false;
+	Sleep(2000);
+	cout << endl;
+	cout << endl;
+	float answer = 0;
+	
+
+	const float X2 = 19.0;
+    const float X1 = 4.0;
+    const float Y2 = 10.0;
+    const float Y1 = 6.0;
+
+while (correct == false)
+{
+    cout << endl;
+
+    answer = Vector2Calculator();
+
+	// This problem was so annoying to solve, I ended up on stack overflow for a solution, it turns out i needed a tolerance and some constants to make it work.
+
+    const double expectedDistance = sqrt((X2 - X1) * (X2 - X1) + (Y2 - Y1) * (Y2 - Y1));
+	const double tolerance = 1e-6;
+
+	if (abs(answer - expectedDistance) < tolerance)
+	{
+		Sleep(1000);
+		correct = true;
+	}
+    else
+    {
+        cout << endl;
+        SetConsoleTextAttribute(hc, 12);
+        string errorMessage = R"("Wrong answer Dave!, try again...")";
+        slowType(errorMessage, slowdelayMilliseconds);
+        SetConsoleTextAttribute(hc, 7);
+    }
+}
+
+	clearConsole();
+
+	cout << R"(|------------------------------------------------------------------|                                                                       
+|                                              @@@@@@@@@           |     
+|                                           @@@@@@@@@@@@@@@        |     
+|                                         @@@@@@@      @@@@@@      |     
+|              @@@@@@@@@@@               @@@@@@@        @@@@@@     |     
+|             @@@@@@@@@@@@@@             @@@               @@@     |     
+|             @@@@@@@@@@@@@@            @@@    @@@@   @@@   @@@    |     
+|             @@@@@@@@@@@@@@@@@@@@@    @@@     @@@@   @@@@  @@@@   |     
+|           @@          @@             @@@     @@     @@    @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@@                 @@@@   |     
+|         @@@@          @@@@            @@@@@               @@@@   |     
+|           @@          @@               @@@@@           @@@@@@    |     
+|             @@@@@@@@@@                   @@@@@@@@@@@@@@@@@@      |     
+|                 @@                         @@@@@@@@@@@@@         |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|           @@@@@@@@@@@@@@                       @@@@@             |     
+|         @@@@    @@  @@@@                       @@@@@             |     
+|         @@@@    @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|             @@@@@@@@                          @@@@@@             |     
+|           @@@@    @@@@@                      @@@@ @@@            |     
+|           @@      @@@@@@                   @@@@@  @@@@@          |    
+|           @@@@                            @@@@@   @@@@@@         | 
+|                                          @@@@@@   @@@@@@         |  
+|                                          @@@@@@   @@@@@@         |   
+|------------------------------------------------------------------|)" << '\n';
+	cout << '\n';
+
+
+	string text10 = R"("You got lucky this time dave,")";
+	string text11 = R"("now get out of my sight")";
+	SetConsoleTextAttribute(hc, 12);
+	slowType(text10, slowdelayMilliseconds);
+	cout << '\n';
+	slowType(text11, slowdelayMilliseconds);
+	SetConsoleTextAttribute(hc, 7);
+
+	Sleep(2500);
+	clearConsole();
+
+}
