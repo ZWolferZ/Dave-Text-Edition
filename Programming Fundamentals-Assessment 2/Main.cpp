@@ -1757,6 +1757,7 @@ while (true)
 	{
 		cin.clear();
 		cin.ignore(1000, '\n');
+        cout << endl;
 		cout << "Inavlid Password" << '\n';
 
 		cout << '\n';
