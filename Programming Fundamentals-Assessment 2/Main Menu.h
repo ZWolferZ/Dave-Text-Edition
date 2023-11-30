@@ -4,9 +4,10 @@
 #include <thread>
 #include <chrono>
 #include <conio.h>
-using namespace std;
 #include "Main.h"
 #include <windows.h>
+
+using namespace std;
 
 #pragma region MainMenu Function
 

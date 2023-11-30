@@ -3,7 +3,6 @@
 #include <thread>
 #include <chrono>
 #include <conio.h>
-using namespace std;
 #include "Main.h"
 #include <windows.h>
 #include "Main Menu.h"
@@ -12,7 +11,7 @@ using namespace std;
 #include "fstream"
 #include <cstdio>
 
-
+using namespace std;
 void main()
 {
 
@@ -1735,7 +1734,7 @@ Sleep(2500);
 clearConsole();
 
 cout << "Okay we lost the slowtype function, but I still cant reset the timeline..." << '\n';
-Sleep(1000);
+Sleep(3000);
 
 // Creates a file with the password in it
 ofstream fileStream = ofstream("DAVE'S SUPER SECRET PASSWORD.txt");
@@ -1765,8 +1764,10 @@ while (true)
     }
     else if (PASSWORD == "Password123")
     {
+        cout << endl;
         cout << "Password Accepted" << '\n';
         Sleep(2500);
+        cout << endl;
         cout << "Timeline Resetting..." << '\n';
         Sleep(2500);
         // Deletes the file with the password in it

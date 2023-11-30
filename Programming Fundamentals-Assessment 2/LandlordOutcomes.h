@@ -130,7 +130,7 @@ void LandlordCHARISMA()
 	cout << '\n';
 	cout << '\n';
 	string Text5 = "Your lucky I like you, david";
-	string text6 = " - the landlord interposed, charismatically";
+	string text6 = " - the landlord interposed";
 	SetConsoleTextAttribute(hc, 12);
 	slowType(Text5, slowdelayMilliseconds);
 	SetConsoleTextAttribute(hc, 7);

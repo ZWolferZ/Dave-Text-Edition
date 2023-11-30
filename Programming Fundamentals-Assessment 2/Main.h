@@ -3,17 +3,16 @@
 #include <iostream>
 #include <thread>
 #include <cstdlib> 
-using namespace std;
 #include <chrono>
 #include <algorithm>
 #include <random>
-
+using namespace std;
 
 #pragma region Slowtype Functions
 
 //Delays for the slow type function
 int delayMilliseconds = 50;
-int slowdelayMilliseconds = 200;
+int slowdelayMilliseconds = 160;
 
 // A slow type function that writes the string provided slower
 void slowType(const string& text, int delay) 
