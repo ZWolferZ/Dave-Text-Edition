@@ -8,7 +8,8 @@ using namespace std;
 #include "Main Menu.h"
 #include "Class.h"
 #include "LandlordOutcomes.h"
-
+#include "fstream"
+#include <cstdio>
 
 
 void main()
@@ -714,7 +715,7 @@ SetConsoleTextAttribute(hc, 1);
 
 #pragma endregion
 
-
+#pragma region Landlord Choices
 
         cout << R"( |------------------------------------------------------------------|                                                        
  | @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@           @@@@@@@@@          |  
@@ -838,6 +839,7 @@ SetConsoleTextAttribute(hc, 1);
             int Ablitynum = 0;
             string DAVEFAIL = "DAVE FAILED";
             string DAVEPASS = "DAVE PASSED";
+            bool DaveKnowsRent = false;
             
             while (choiceconfirm1 == false) 
             {
@@ -884,9 +886,11 @@ SetConsoleTextAttribute(hc, 1);
                 if (Ablitynum < 14)
                 {
                     slowType(DAVEFAIL, delayMilliseconds);
+                    DaveKnowsRent = true;
                     Sleep(5000);
                     clearConsole();
                     LandlordFAIL();
+
                 }
                 else if (Ablitynum >= 14)
                 {
@@ -920,6 +924,7 @@ SetConsoleTextAttribute(hc, 1);
                 if (Ablitynum < 16)
                 {
                     slowType(DAVEFAIL, delayMilliseconds);
+                    DaveKnowsRent = true;
                     Sleep(5000);
                     clearConsole();
                     LandlordFAIL();
@@ -956,8 +961,10 @@ SetConsoleTextAttribute(hc, 1);
                 if (Ablitynum < 10)
                 {
                     slowType(DAVEFAIL, delayMilliseconds);
+                    DaveKnowsRent = true;
                     Sleep(5000);
                     clearConsole();
+
                     LandlordFAIL();
                 }
                 else if (Ablitynum >= 10)
@@ -965,13 +972,734 @@ SetConsoleTextAttribute(hc, 1);
                     slowType(DAVEPASS, delayMilliseconds);
                     Sleep(5000);
                     clearConsole();
-                  
+                    LandlordSPEED();
                 }
                 
         
             }
+#pragma endregion
 
+#pragma region Time Starts breaking
+            cout << R"(|----------------------------------------------------------------------------------|
+|            @@@@@@@@@                                                             |                   
+|          @@@@@@@@@@@@                                                            |                    
+|          @@@@@@@@@@@@@                                                           |                     
+|          @@@@@@@@@@@@@@@@@@                                                      |                      
+|       @@@         @@@                                                            |                    
+|       @@           @@                                    @@@@@@                  |                        
+|       @@           @@                                   @@@@@@@@                 |                     
+|       @@           @@                                    @@@@@@                  |                        
+|         @@        @@                                                             |          
+|          @@@@@@@@@                                     @@@@@@@                   |                        
+|              @@                                   @@@@@@@@@@@@@                  |                 
+|              @@                                  @@@@@@@@@@@@@@                  |          
+|              @@                                 @@@@@ @@@@@@@@@@                 |           
+|         @@@@@@@@@@@                             @@@@  @@@@@@@@@@@@@              |        
+|       @@@@@@@@@@@@@@                           @@@@  @@@@@@@  @@@@@@@@           |          
+|       @@@@   @@                                      @@@@@@@      @@@@           |            
+|              @@                                      @@@@@@@                     |                        
+|              @@                                     @@@@@@@@@@                   |                
+|              @@                                     @@@@  @@@@@@                 |                               
+|              @@                                     @@@      @@@@                |                                      
+|              @@                                   @@@@@      @@@@                |                                       
+|              @@                                  @@@@@       @@@@                |                                        
+|              @@                                @@@@@         @@@@                |                                         
+|          @@@@@@@                              @@@@@          @@@@                |                                          
+|         @@@   @@@@@                          @@@@            @@@@                |
+|----------------------------------------------------------------------------------|)" << '\n';
+
+            string Text24 = "Dave walked onto the street after his encounter with his landlord.";
+            string Text25 = "He was still wondering why his hat had given him such power.";
+			string Text26 = "Dave wanted to ponder this question,";
+			string Text27 = "but was quickly brought back to reality by his landlord at his door!";
+           
+            string Text28 = "Wait what?";
+            string Text29 = "Didnt we already deal with the landlord, Dave?";
+            
+			cout << '\n';
+			slowType(Text24, delayMilliseconds);
+			cout << '\n';
+			cout << '\n';
+			slowType(Text25, delayMilliseconds);
+			cout << '\n';
+			cout << '\n';
+			slowType(Text26, delayMilliseconds);
+			cout << '\n';
+			slowType(Text27, delayMilliseconds);
+            cout << '\n';
+            cout << '\n';
+            slowType(Text28, slowdelayMilliseconds);
+            cout << '\n';
+            cout << '\n';
+            slowType(Text29, slowdelayMilliseconds);
+			Sleep(2500);
+			clearConsole();
+
+            cout << R"( 
+ |----------------------------------------------------------------------------------------------------------------------------------------------------|
+ |                                                                                                                                                    |
+ |                                                                                                                                                    |
+ |                                                                                                                                                    |
+ |                                                                                                                                                    |
+ |                                                                                                                               @@@@@@@@             |
+ |                                                                                                                             @@        @@           |
+ |                                                                                                                             @           @          |
+ |                                                                                                                             @@@@@@@@@@@@@@@@@      |
+ |                                                                                                                           @@           @           |
+ |                                                                                                                         @@             @           |
+ |                                                                                                                         @@             @           |
+ |                                                                                                                         @@             @           |
+ |                                                                                                                         @@             @           |
+ |                                                                                                                          @@           @            |
+ |                                                                                                                            @@@@@@@@@@@             |
+ |                                                                                                                                @@                  |
+ |                                                                                                                                @@                  |
+ |                                                                                                                                @@                  |
+ |                                                                                                                               @@@@                 |
+ |                                                                                                                           @@@@@@@@@@               |
+ |                                                                                                                         @@@@@@@@@@@@@              |
+ |                                                                                                                       @@@      @@  @@@@            |
+ |                                                                                                                      @@        @@     @@@          |
+ |                                     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                            @@        @@       @@@        |
+ |                                      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                            @@@@      @@       @@@        |
+ |                                          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                        @@@      @@                  |
+ |                                          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                  @@                  |
+ |            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                @@@@                 |
+ |            @@@                                                         @@@                                                  @@@@@@@@@              |
+ |            @@@                                                         @@@                                                 @@@     @@              |
+ |            @@@                                                         @@@                                               @@@@       @@             | 
+ |            @@@                                                         @@@                                              @@@         @@@@           |  
+ |                                                                                                                        @@            @@@           |
+ |----------------------------------------------------------------------------------------------------------------------------------------------------|
+)" << '\n';
+            cout << '\n';
+            string text30 = "And when did we get back to your room!";
+            slowType(text30, delayMilliseconds);
+            cout << '\n';
+            cout << '\n';
+            string text31 = "Just deal with the landlord again Dave,";
+            slowType(text31, delayMilliseconds);
+cout << '\n';
+string text32 = "i'm sure it will be fine";
+slowType(text32, delayMilliseconds);
+Sleep(3000);
+clearConsole();
+
+cout << R"( |------------------------------------------------------------------|                                                        
+ | @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@           @@@@@@@@@          |  
+ | @@@@                           @@@@       @@@@         @@@@      | 
+ | @@@@                           @@@@     @@@@@@           @@@@    | 
+ | @@@@                           @@@@    @@                   @@   | 
+ | @@@@                           @@@@   @@                     @@  | 
+ | @@@@                           @@@@  @@       @@@     @@@     @@ | 
+ | @@@@                           @@@@  @@       @       @       @@ |  
+ | @@@@                           @@@@  @@                       @@ | 
+ | @@@@                           @@@@  @@                       @@ | 
+ | @@@@                           @@@@  @@                       @@ | 
+ | @@@@                           @@@@  @@                       @@ | 
+ | @@@@                           @@@@   @@                      @@ |  
+ | @@@@                           @@@@    @@@                   @@  |   
+ | @@@@                           @@@@      @@@             @@@@    | 
+ | @@@@                 @@@@@@@@  @@@@         @@@@@@@@@@@@@        | 
+ | @@@@                @@      @@ @@@@              @ @             | 
+ | @@@@                @@      @@ @@@@              @ @             | 
+ | @@@@                @@      @@ @@@@              @ @             | 
+ | @@@@                @@      @@ @@@@              @ @             | 
+ | @@@@                 @@@@@@@@  @@@@              @ @             | 
+ | @@@@                           @@@@              @ @             | 
+ | @@@@                           @@@@              @ @             | 
+ | @@@@                           @@@@              @ @             | 
+ | @@@@                           @@@@              @ @             | 
+ | @@@@                           @@@@              @ @             | 
+ | @@@@                           @@@@              @ @             | 
+ | @@@@                           @@@@              @ @             | 
+ | @@@@                           @@@@              @ @             | 
+ | @@@@                           @@@@              @ @             | 
+ | @@@@                           @@@@             @@ @@            | 
+ | @@@@                           @@@@           @@@   @@           | 
+ | @@@@                           @@@@          @@ @@@@ @@          | 
+ | @@@@                           @@@@        @@@ @@  @@  @@@       |  
+ | @@@@                           @@@@        @   @    @@   @       | 
+ | @@@@                           @@@@        @@@@@     @@@@@       | 
+ | @@@@                           @@@@                              | 
+ | @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                              | 
+ |------------------------------------------------------------------|)" << '\n';
+cout << '\n';
+
+SetConsoleTextAttribute(hc, 12);
+slowType(Text17, slowdelayMilliseconds);
+cout << '\n';
+cout << '\n';
+slowType(Text18, slowdelayMilliseconds);
+SetConsoleTextAttribute(hc, 7);
+
+Sleep(2500);
+clearConsole();
+#pragma endregion
+
+#pragma region Landlord Again
+cout << R"(|------------------------------------------------------------------|                                                                       
+|                                              @@@@@@@@@           |     
+|                                           @@@@@@@@@@@@@@@        |     
+|                                         @@@@@@@      @@@@@@      |     
+|              @@@@@@@@@@@               @@@@@@@        @@@@@@     |     
+|             @@@@@@@@@@@@@@             @@@               @@@     |     
+|             @@@@@@@@@@@@@@            @@@    @@@@   @@@   @@@    |     
+|             @@@@@@@@@@@@@@@@@@@@@    @@@     @@@@   @@@@  @@@@   |     
+|           @@          @@             @@@     @@     @@    @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@@                 @@@@   |     
+|         @@@@          @@@@            @@@@@               @@@@   |     
+|           @@          @@               @@@@@           @@@@@@    |     
+|             @@@@@@@@@@                   @@@@@@@@@@@@@@@@@@      |     
+|                 @@                         @@@@@@@@@@@@@         |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|           @@@@@@@@@@@@@@                       @@@@@             |     
+|         @@@@    @@  @@@@                       @@@@@             |     
+|         @@@@    @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|             @@@@@@@@                          @@@@@@             |     
+|           @@@@    @@@@@                      @@@@ @@@            |     
+|           @@      @@@@@@                   @@@@@  @@@@@          |    
+|           @@@@                            @@@@@   @@@@@@         | 
+|                                          @@@@@@   @@@@@@         |  
+|                                          @@@@@@   @@@@@@         |   
+|------------------------------------------------------------------|)" << '\n';
+cout << '\n';
+bool choiceconfirm2 = false;
+int choice2 = 0;
+  if (DaveKnowsRent == true)
+  {
+      string text33 = R"(Sorry, Mr Weightman, weird day;)";
+     string text34 = R"(It was £15.5242 wasn't it?)";
+     
+     SetConsoleTextAttribute(hc, 2);
+     slowType(text33, delayMilliseconds);
+     cout << '\n';
+     slowType(text34, delayMilliseconds);
+     SetConsoleTextAttribute(hc, 7);
+     string text35 = R"(Yeah!, Wait...)";
+     string text36 = R"(How did you know that Dave?)";
+     SetConsoleTextAttribute(hc, 12);
+     cout << '\n';
+     cout << '\n';
+     slowType(text35, delayMilliseconds);
+     cout << '\n';
+     cout << '\n';
+     slowType(text36, slowdelayMilliseconds);
+     
+      cout << '\n';
+     cout << '\n';
+     SetConsoleTextAttribute(hc, 2);
+     string text37 = R"(Uhhhh)";
+       slowType(text37, delayMilliseconds);
+       SetConsoleTextAttribute(hc, 7);
+      Sleep(2500);
+      clearConsole();
+cout << R"(|------------------------------------------------------------------|                                                                       
+|                                              @@@@@@@@@           |     
+|                                           @@@@@@@@@@@@@@@        |     
+|                                         @@@@@@@      @@@@@@      |     
+|              @@@@@@@@@@@               @@@@@@@        @@@@@@     |     
+|             @@@@@@@@@@@@@@             @@@               @@@     |     
+|             @@@@@@@@@@@@@@            @@@    @@@@   @@@   @@@    |     
+|             @@@@@@@@@@@@@@@@@@@@@    @@@     @@@@   @@@@  @@@@   |     
+|           @@          @@             @@@     @@     @@    @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@@                 @@@@   |     
+|         @@@@          @@@@            @@@@@               @@@@   |     
+|           @@          @@               @@@@@           @@@@@@    |     
+|             @@@@@@@@@@                   @@@@@@@@@@@@@@@@@@      |     
+|                 @@                         @@@@@@@@@@@@@         |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|           @@@@@@@@@@@@@@                       @@@@@             |     
+|         @@@@    @@  @@@@                       @@@@@             |     
+|         @@@@    @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|             @@@@@@@@                          @@@@@@             |     
+|           @@@@    @@@@@                      @@@@ @@@            |     
+|           @@      @@@@@@                   @@@@@  @@@@@          |    
+|           @@@@                            @@@@@   @@@@@@         | 
+|                                          @@@@@@   @@@@@@         |  
+|                                          @@@@@@   @@@@@@         |   
+|------------------------------------------------------------------|)" << '\n';
+
+cout << '\n';
+string text38 = R"(What should Dave do?)";
+slowType(text38, delayMilliseconds);
+cout << '\n';
+cout << '\n';
+string text39 = R"(1. Tell the truth (Charaisma Check 100))";
+string text40 = R"(2. Lie (Charaisma Check 12))";
+string text41 = R"(3. Run Away (Speed Check 10))";
+SetConsoleTextAttribute(hc, 2);
+slowType(text39, delayMilliseconds);
+cout << '\n';
+cout << '\n';
+slowType(text40, delayMilliseconds);
+cout << '\n';
+cout << '\n';
+SetConsoleTextAttribute(hc, 1);
+slowType(text41, delayMilliseconds);
+SetConsoleTextAttribute(hc, 7);
+cout << '\n';
+     while (choiceconfirm2 == false)
+     {
+         cout << '\n';
+         cout << ">";
+         cin >> choice2;
+
+         if (choice2 < 1 || choice2 > 2 || cin.fail())
+         {
+             cin.clear();
+             cin.ignore(1000, '\n');
+             cout << "Inavlid Character / Out of range! (1 - 2)" << '\n';
+
+             cout << '\n';
+
+
+         }
+         else
+         {
+             choiceconfirm2 = true;
+         }
+
+     }
+     if (choice2 == 1)
+     {
+         clearConsole();
+
+         randomnum = random(1, 20);
+
+         Ablitynum = randomnum + CHARAISMAMOD;
+
+         Diceroll(randomnum);
+
+
+
+         cout << '\n';
+         cout << "Your dice roll was " << randomnum << "." << '\n';
+         cout << '\n';
+         cout << "Your Charaisma Modifer is " << CHARAISMAMOD << '\n';
+         cout << '\n';
+         cout << randomnum << " + " << CHARAISMAMOD << " = " << Ablitynum;
+         cout << '\n';
+         cout << '\n';
+         if (Ablitynum < 100)
+         {
+             slowType(DAVEFAIL, delayMilliseconds);
+
+             Sleep(5000);
+             clearConsole();
+             LandlordFAIL2();
+         }
+         else if (Ablitynum >= 100)
+         {
+            // Lol Nice try 
+         }
+
+     }
+     if (choice2 == 2)
+     {
+         clearConsole();
+
+         randomnum = random(1, 20);
+
+         Ablitynum = randomnum + CHARAISMAMOD;
+
+         Diceroll(randomnum);
+
+
+
+         cout << '\n';
+         cout << "Your dice roll was " << randomnum << "." << '\n';
+         cout << '\n';
+         cout << "Your Charaisma Modifer is " << CHARAISMAMOD << '\n';
+         cout << '\n';
+         cout << randomnum << " + " << CHARAISMAMOD << " = " << Ablitynum;
+         cout << '\n';
+         cout << '\n';
+         if (Ablitynum < 12)
+         {
+             slowType(DAVEFAIL, delayMilliseconds);
+             
+             Sleep(5000);
+             clearConsole();
+             LandlordFAIL2();
+         }
+         else if (Ablitynum >= 12)
+         {
+             slowType(DAVEPASS, delayMilliseconds);
+             Sleep(5000);
+             clearConsole();
+             LandlordCHARAISMA2();
+         }
+         if (choice2 == 3)
+         {
+             clearConsole();
+
+             randomnum = random(1, 20);
+
+             Ablitynum = randomnum + SPEEDMOD;
+
+             Diceroll(randomnum);
+
+
+
+             cout << '\n';
+             cout << "Your dice roll was " << randomnum << "." << '\n';
+             cout << '\n';
+             cout << "Your Speed Modifer is " << SPEEDMOD << '\n';
+             cout << '\n';
+             cout << randomnum << " + " << SPEEDMOD << " = " << Ablitynum;
+             cout << '\n';
+             cout << '\n';
+             if (Ablitynum < 10)
+             {
+                 slowType(DAVEFAIL, delayMilliseconds);
+                 
+                 Sleep(5000);
+                 clearConsole();
+
+                 LandlordFAIL2();
+             }
+             else if (Ablitynum >= 10)
+             {
+                 slowType(DAVEPASS, delayMilliseconds);
+                 Sleep(5000);
+                 clearConsole();
+                 LandlordSPEED();
+             }
+         }
+
+
+     }
+  }
+  else if (DaveKnowsRent == false)
+  {
+         string text42 = R"(Sorry, Mr Weightman, weird day;)";
+string text43 = R"(What do I owe?)";
+SetConsoleTextAttribute(hc, 2);
+slowType(text42, delayMilliseconds);
+cout << '\n';
+cout << '\n';
+slowType(text43, delayMilliseconds);
+SetConsoleTextAttribute(hc, 7);
+Sleep(2500);
+clearConsole();
+cout << R"(
+|------------------------------------------------------|
+|             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     |        
+|             @    @@@@@@@@@@@@@@@@@@@@@@@@@@    @     |        
+|             @  @@                          @@  @     |        
+|             @  @@                           @  @     |        
+|             @  @@                           @  @     |        
+|             @  @@                           @  @     |        
+|             @  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  @     |        
+|             @                                  @     |        
+|             @    @@@@@@@@@@@@@@@@@@@@@@@@@@    @     |        
+|             @  @@                          @@  @     |        
+|             @  @@ @@@@@ @@@@@@ @@@@@ @@@@@@ @  @     |        
+|             @  @@ @  @@ @@  @@ @   @ @@  @@ @  @     |        
+|             @  @@ @@@@@ @@@@@  @@@@@  @@@@  @  @     |        
+|             @  @@ @@@@   @@@@   @@@   @@@@  @  @     |        
+|             @  @@ @  @@ @@  @@ @  @@ @@  @@ @  @     |        
+|             @  @@ @@ @@ @@  @@ @@ @@ @@  @@ @  @     |        
+|             @  @@                           @  @     |        
+|             @  @@ @@@@@ @@@@@  @@@@@ @@@@@@ @  @     |        
+|             @  @@ @  @@ @@  @@ @   @ @@  @@ @  @     |        
+|             @  @@ @@@@@ @@@@@  @@@@@ @@@@@@ @  @     |        
+|             @  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  @     |        
+|             @                                  @     |        
+|             @                                  @     |        
+|             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     |
+|------------------------------------------------------|
+)" << '\n';
+
+string text44 = R"("You owe me the distance between vector2 points (4,6) and points (19,10))";
+string text45 = " - The landlord exclaimed";
+SetConsoleTextAttribute(hc, 12);
+slowType(text44, delayMilliseconds);
+SetConsoleTextAttribute(hc, 7);
+slowType(text45, delayMilliseconds);
+cout << '\n';
+cout << '\n';
+string text46 = "Dave brought out his handy vector2 distance calculator,";
+
+string text47 = "to work out his rent from the vectors ";
+slowType(text46, delayMilliseconds);
+cout << '\n';
+slowType(text47, delayMilliseconds);
+bool correct = false;
+Sleep(2000);
+cout << endl;
+cout << endl;
+float answer = 0;
+
+
+const float X2 = 19.0;
+const float X1 = 4.0;
+const float Y2 = 10.0;
+const float Y1 = 6.0;
+
+while (correct == false)
+{
+    cout << endl;
+
+    answer = Vector2Calculator();
+
+    
+
+    const double expectedDistance = sqrt((X2 - X1) * (X2 - X1) + (Y2 - Y1) * (Y2 - Y1));
+    const double tolerance = 1e-6;
+
+    if (abs(answer - expectedDistance) < tolerance)
+    {
+        Sleep(1000);
+        correct = true;
+    }
+    else
+    {
+        cout << endl;
+        SetConsoleTextAttribute(hc, 12);
+        string errorMessage = R"("Wrong answer Dave!, try again...")";
+        slowType(errorMessage, slowdelayMilliseconds);
+        SetConsoleTextAttribute(hc, 7);
+    }
 }
 
+clearConsole();
+
+cout << R"(|------------------------------------------------------------------|                                                                       
+|                                              @@@@@@@@@           |     
+|                                           @@@@@@@@@@@@@@@        |     
+|                                         @@@@@@@      @@@@@@      |     
+|              @@@@@@@@@@@               @@@@@@@        @@@@@@     |     
+|             @@@@@@@@@@@@@@             @@@               @@@     |     
+|             @@@@@@@@@@@@@@            @@@    @@@@   @@@   @@@    |     
+|             @@@@@@@@@@@@@@@@@@@@@    @@@     @@@@   @@@@  @@@@   |     
+|           @@          @@             @@@     @@     @@    @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@@                 @@@@   |     
+|         @@@@          @@@@            @@@@@               @@@@   |     
+|           @@          @@               @@@@@           @@@@@@    |     
+|             @@@@@@@@@@                   @@@@@@@@@@@@@@@@@@      |     
+|                 @@                         @@@@@@@@@@@@@         |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|           @@@@@@@@@@@@@@                       @@@@@             |     
+|         @@@@    @@  @@@@                       @@@@@             |     
+|         @@@@    @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|             @@@@@@@@                          @@@@@@             |     
+|           @@@@    @@@@@                      @@@@ @@@            |     
+|           @@      @@@@@@                   @@@@@  @@@@@          |    
+|           @@@@                            @@@@@   @@@@@@         | 
+|                                          @@@@@@   @@@@@@         |  
+|                                          @@@@@@   @@@@@@         |   
+|------------------------------------------------------------------|)" << '\n';
+cout << '\n';
+
+
+string text10 = R"("You got lucky this time dave,")";
+string text11 = R"("now get out of my sight")";
+SetConsoleTextAttribute(hc, 12);
+slowType(text10, slowdelayMilliseconds);
+cout << '\n';
+slowType(text11, slowdelayMilliseconds);
+SetConsoleTextAttribute(hc, 7);
+
+Sleep(2500);
+clearConsole();
+  
+ 
+  
+
+
+  }  
+#pragma endregion
+
+#pragma region Time Breaks Again
+  clearConsole();
+
+  cout << R"(|----------------------------------------------------------------------------------|
+|            @@@@@@@@@                                                             |                   
+|          @@@@@@@@@@@@                                                            |                    
+|          @@@@@@@@@@@@@                                                           |                     
+|          @@@@@@@@@@@@@@@@@@                                                      |                      
+|       @@@         @@@                                                            |                    
+|       @@           @@                                    @@@@@@                  |                        
+|       @@           @@                                   @@@@@@@@                 |                     
+|       @@           @@                                    @@@@@@                  |                        
+|         @@        @@                                                             |          
+|          @@@@@@@@@                                     @@@@@@@                   |                        
+|              @@                                   @@@@@@@@@@@@@                  |                 
+|              @@                                  @@@@@@@@@@@@@@                  |          
+|              @@                                 @@@@@ @@@@@@@@@@                 |           
+|         @@@@@@@@@@@                             @@@@  @@@@@@@@@@@@@              |        
+|       @@@@@@@@@@@@@@                           @@@@  @@@@@@@  @@@@@@@@           |          
+|       @@@@   @@                                      @@@@@@@      @@@@           |            
+|              @@                                      @@@@@@@                     |                        
+|              @@                                     @@@@@@@@@@                   |                
+|              @@                                     @@@@  @@@@@@                 |                               
+|              @@                                     @@@      @@@@                |                                      
+|              @@                                   @@@@@      @@@@                |                                       
+|              @@                                  @@@@@       @@@@                |                                        
+|              @@                                @@@@@         @@@@                |                                         
+|          @@@@@@@                              @@@@@          @@@@                |                                          
+|         @@@   @@@@@                          @@@@            @@@@                |
+|----------------------------------------------------------------------------------|)" << '\n';
+
+
+  cout << '\n';
+  slowType(Text24, delayMilliseconds);
+  cout << '\n';
+  cout << '\n';
+  slowType(Text25, delayMilliseconds);
+  cout << '\n';
+  cout << '\n';
+  slowType(Text26, delayMilliseconds);
+  cout << '\n';
+  slowType(Text27, delayMilliseconds);
+  cout << '\n';
+  cout << '\n';
+string text48 = R"(Okay this clearly isnt working!)";
+string text49 = R"(One second Dave, im going to try something)";
+slowType(text48, delayMilliseconds);
+cout << '\n';
+cout << '\n';
+slowType(text49, delayMilliseconds);
+Sleep(2500);
+clearConsole();
+Mainmenu2();
+
+#pragma endregion
+
+#pragma region Timeline Reset
+
+cout << R"(???????????????????????????????????????
+?????????????
+??????????????????????????????????
+????????????????????
+????????????
+??????????????????????????????????????
+???????????????????????????????????????
+?????????????
+??????????????????????????????????
+????????????????????
+????????????
+??????????????????????????????????????
+???????????????????????????????????????
+?????????????
+??????????????????????????????????
+????????????????????
+????????????
+??????????????????????????????????????
+???????????????????????????????????????
+?????????????
+??????????????????????????????????
+????????????????????
+????????????
+??????????????????????????????????????
+???????????????????????????????????????
+?????????????
+??????????????????????????????????
+????????????????????
+????????????
+??????????????????????????????????????)" << '\n';
+
+
+cout << '\n';
+string text50 = R"(What the hell is that?)";
+string text51 = R"(This clearly is not working dave,)";
+string text52 = R"(I need to restart the timeline again...)";
+string text53 = R"(I will be back in a second)";
+slowType(text50, delayMilliseconds);
+cout << '\n';
+cout << '\n';
+slowType(text51, delayMilliseconds);
+cout << '\n';
+slowType(text52, delayMilliseconds);
+cout << '\n';
+cout << '\n';
+slowType(text53, delayMilliseconds);
+Sleep(2500);
+clearConsole();
+
+cout << "Okay we lost the slowtype function, but I still cant reset the timeline..." << '\n';
+Sleep(1000);
+
+ofstream fileStream = ofstream("DAVE'S SUPER SECRET PASSWORD.txt");
+fileStream << "Timeline Reset Password: Password123" << '\n';
+fileStream.close();
+
+cout << "I have created a file with the password in it, you will need to find it and enter it to reset the timeline" << '\n';
+Sleep(3300);
+cout << endl;
+cout << "I cant do it from my end, its all on you Dave!" << '\n';
+Sleep(3000);
+string PASSWORD = "";
+while (true)
+{
+	cout << '\n';
+    cout << ">";
+    cin >> PASSWORD;
+    if (cin.fail())
+	{
+		cin.clear();
+		cin.ignore(1000, '\n');
+		cout << "Inavlid Password" << '\n';
+
+		cout << '\n';
+
+    }
+    else if (PASSWORD == "Password123")
+    {
+        cout << "Password Accepted" << '\n';
+        Sleep(2500);
+        cout << "Timeline Resetting..." << '\n';
+        Sleep(2500);
+        remove("DAVE'S SUPER SECRET PASSWORD.txt");
+        clearConsole();
+        break;
+        
+    }
+
+}
+#pragma endregion 
+
+}
 
 

@@ -8,7 +8,7 @@ using namespace std;
 // Colour Handle Grabber
 HANDLE hc = GetStdHandle(STD_OUTPUT_HANDLE);
 
-
+#pragma region Landlord Stength
 void LandlordSTRENGTH()
 {
 		cout << R"(|------------------------------------------------------------------------------------------------------|                                                                                                      
@@ -68,6 +68,10 @@ void LandlordSTRENGTH()
 		clearConsole();
 
 }
+#pragma endregion
+
+#pragma region Landlord Charisma
+
 void LandlordCHARISMA()
 {
 	cout << R"(|------------------------------------------------------------------|                                                                       
@@ -138,7 +142,9 @@ void LandlordCHARISMA()
 	clearConsole();
 }
 	
-	
+	#pragma endregion
+
+#pragma region Landlord Speed
 	
 void LandlordSPEED()
 {
@@ -202,6 +208,9 @@ void LandlordSPEED()
 	clearConsole();
 }
 
+#pragma endregion
+
+#pragma region Landlord Fail
 void LandlordFAIL()
 {
 	cout << R"(|------------------------------------------------------------------|                                                                       
@@ -396,3 +405,131 @@ while (correct == false)
 	clearConsole();
 
 }
+
+#pragma endregion
+
+#pragma region Landlord Fail2
+void LandlordFAIL2()
+{
+	cout << R"(|------------------------------------------------------------------|                                                                       
+|                                              @@@@@@@@@           |     
+|                                           @@@@@@@@@@@@@@@        |     
+|                                         @@@@@@@      @@@@@@      |     
+|              @@@@@@@@@@@               @@@@@@@        @@@@@@     |     
+|             @@@@@@@@@@@@@@             @@@               @@@     |     
+|             @@@@@@@@@@@@@@            @@@    @@@@   @@@   @@@    |     
+|             @@@@@@@@@@@@@@@@@@@@@    @@@     @@@@   @@@@  @@@@   |     
+|           @@          @@             @@@     @@     @@    @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@@                 @@@@   |     
+|         @@@@          @@@@            @@@@@               @@@@   |     
+|           @@          @@               @@@@@           @@@@@@    |     
+|             @@@@@@@@@@                   @@@@@@@@@@@@@@@@@@      |     
+|                 @@                         @@@@@@@@@@@@@         |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|           @@@@@@@@@@@@@@                       @@@@@             |     
+|         @@@@    @@  @@@@                       @@@@@             |     
+|         @@@@    @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|             @@@@@@@@                          @@@@@@             |     
+|           @@@@    @@@@@                      @@@@ @@@            |     
+|           @@      @@@@@@                   @@@@@  @@@@@          |    
+|           @@@@                            @@@@@   @@@@@@         | 
+|                                          @@@@@@   @@@@@@         |  
+|                                          @@@@@@   @@@@@@         |   
+|------------------------------------------------------------------|)" << '\n';
+
+	cout << '\n';
+
+string text1 = "I dont know how you would of known that dave,";
+string text2 = "But I dont care anyway.";
+string text3 = "Now get out of my sight";
+SetConsoleTextAttribute(hc, 12);
+slowType(text1, delayMilliseconds);
+cout << '\n';
+slowType(text2, delayMilliseconds);
+cout << '\n';
+cout << '\n';
+slowType(text3, slowdelayMilliseconds);
+SetConsoleTextAttribute(hc, 7);
+Sleep(2500);
+clearConsole();
+}
+
+#pragma endregion
+
+#pragma region Landlord Charisma2
+void LandlordCHARAISMA2()
+{
+	cout << R"(|------------------------------------------------------------------|                                                                       
+|                                              @@@@@@@@@           |     
+|                                           @@@@@@@@@@@@@@@        |     
+|                                         @@@@@@@      @@@@@@      |     
+|              @@@@@@@@@@@               @@@@@@@        @@@@@@     |     
+|             @@@@@@@@@@@@@@             @@@               @@@     |     
+|             @@@@@@@@@@@@@@            @@@    @@@@   @@@   @@@    |     
+|             @@@@@@@@@@@@@@@@@@@@@    @@@     @@@@   @@@@  @@@@   |     
+|           @@          @@             @@@     @@     @@    @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@                  @@@@   |     
+|         @@              @@           @@@@                 @@@@   |     
+|         @@@@          @@@@            @@@@@               @@@@   |     
+|           @@          @@               @@@@@           @@@@@@    |     
+|             @@@@@@@@@@                   @@@@@@@@@@@@@@@@@@      |     
+|                 @@                         @@@@@@@@@@@@@         |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|           @@@@@@@@@@@@@@                       @@@@@             |     
+|         @@@@    @@  @@@@                       @@@@@             |     
+|         @@@@    @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|           @@@@  @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|                 @@                             @@@@@             |     
+|             @@@@@@@@                          @@@@@@             |     
+|           @@@@    @@@@@                      @@@@ @@@            |     
+|           @@      @@@@@@                   @@@@@  @@@@@          |    
+|           @@@@                            @@@@@   @@@@@@         | 
+|                                          @@@@@@   @@@@@@         |  
+|                                          @@@@@@   @@@@@@         |   
+|------------------------------------------------------------------|)" << '\n';
+
+	cout << '\n';
+	string text1 = "Just a lucky Guess!";
+string text2 = " - Dave Lied";
+	SetConsoleTextAttribute(hc, 2);
+	slowType(text1, delayMilliseconds);
+	SetConsoleTextAttribute(hc, 7);
+	slowType(text2, delayMilliseconds);
+	SetConsoleTextAttribute(hc, 12);
+	string text3 = "Well I dont care anyway.";
+string text4 = "Now get out of my sight";
+cout << '\n';
+cout << '\n';
+slowType(text3, delayMilliseconds);
+cout << '\n';
+cout << '\n';
+slowType(text4, slowdelayMilliseconds);
+SetConsoleTextAttribute(hc, 7);
+
+}
+
+#pragma endregion
+
