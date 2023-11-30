@@ -1,3 +1,4 @@
+// Main Menu Header File holds all the main menu functions
 #pragma once
 #include <iostream>
 #include <thread>
@@ -74,7 +75,7 @@ void Mainmenu2()
 	ShowWindow(consoleWindow, SW_MINIMIZE);
 
 	Sleep(1000);
-	
+	// Maximise the console
 	ShowWindow(consoleWindow, SW_MAXIMIZE);
 
 	// Ascci Art title
@@ -120,3 +121,69 @@ void Mainmenu2()
 }
 #pragma endregion
 
+#pragma region Mainmenu Function 3
+
+void Mainmenu3()
+{
+	// Minimize the console 
+	HWND consoleWindow = GetConsoleWindow();
+	ShowWindow(consoleWindow, SW_MAXIMIZE);
+
+	// Ascci Art title
+	cout << R"(|---------------------------------------------------------------------------------------------------------|
+|                                                                                                         |
+|        #@@@%%%##                                                                                        |
+|        %@@@@@@@@@@@@@%##                                                                                |
+|        @@@@######%%@@@@@@#                                                                              |
+|       #@@@%          #@@@@@#                                                                            |
+|       %@@@#            #@@@@%                                                                           |
+|       @@@@               @@@@%                                                                          |
+|      #@@@@               #@@@@                                                                          |
+|      %@@@%                @@@@#    #%@@@@@@@%%#                                                         |
+|      %@@@#                @@@@#    #@@@%%%@@@@@@#     %@%%#                                             |
+|     #@@@@#                @@@@              #@@@@#    #@@@%           ####                              |
+|     #@@@%                %@@@%                @@@@    #@@@@#         %@@@%       #%%%%%##               |
+|     #@@@%               #@@@@#                @@@@     %@@@%        %@@@%     #@@@@@@@@@@@%             |
+|     %@@@#              #@@@@%     #%@@@@@@@@@@@@@%     #@@@%       %@@@%    #@@@@%     #@@@@#           |
+|     @@@@#             %@@@@%    #@@@@@#######%@@@#      @@@@#     %@@@%    #@@@%         %@@@#          |
+|    #@@@@           #@@@@@@     #@@@@#        @@@@       #@@@#    %@@@#    #@@@%          #@@@%          |
+|    %@@@@@@@@@@@@@@@@@@@@#      #@@@@#       #@@@@        @@@@   %@@@#     %@@@@@@@@@@%%%##@@@@          |
+|  #%#####%%@@@@@@@@@%##         #@@@@#      #@@@@%        %@@@  %@@@#      %@@@##%%%@@@@@@@@@@%          |
+|  @@@@@@@@@@%##                  #@@@@@@%%@@@@@@@#         @@@%%@@@#       %@@@#                         |
+|  ##%%@@@@@@@@@@@@@@@%%###         #%@@@@@@%#%@@@#         %@@@@@@#        #@@@%                         |
+|           ####%%@@@@@@@@@@@@@@@%%#                        #@@@@@#          %@@@%                        |
+|                       ##%@@@@@@@@@@@@@@@@%###              ##%%#            %@@@@@##            ####    |
+|                                ##%%%@@@@@@@@@@@@@@%%###                       %@@@@@@@@@@@%    %@@@@%   |
+|                                          ###%%@@@@@@@@@@@@@@@%%#                 ####%%%###    %@@@@%   |
+|                                                     #%%@@@@@@@@@@@@@@@@%####                    #%%#    |
+|                                                              ##%%%@@@@@@@@@@@@@@%%%##                   |
+|                                                                        ###%@@@@@@@@@@@@@@@#             |
+|                                                                                  ##%%@@@@@#             |
+|                                                                                                         |
+|---------------------------------------------------------------------------------------------------------|)" << '\n';
+	cout << '\n';
+
+	string Starttext = "Lets Hope the timeline works this time!";
+	slowType(Starttext, delayMilliseconds);
+
+	cout << '\n';
+	
+	cout << '\n';
+	Sleep(1000);
+
+	string Starttext2 = "Press any key to begin.";
+
+	slowType(Starttext2, delayMilliseconds);
+
+	cout << '\n';
+
+	cout << "> ";
+	// Waits for user to input any command
+	while (!_kbhit())
+	{
+
+
+	}
+	clearConsole();
+}
+#pragma endregion

@@ -11,6 +11,7 @@ using namespace std;
 
 #pragma region Slowtype Functions
 
+//Delays for the slow type function
 int delayMilliseconds = 50;
 int slowdelayMilliseconds = 200;
 
@@ -43,6 +44,7 @@ void clearConsole()
     {
         system("cls");
     }
+
 #pragma endregion
 
 #pragma region Random Function

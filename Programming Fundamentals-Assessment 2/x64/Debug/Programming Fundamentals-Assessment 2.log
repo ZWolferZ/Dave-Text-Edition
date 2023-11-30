@@ -1,8 +1,8 @@
 ﻿  Main.cpp
-C:\Users\Ryan Moakes\Documents\GitHub\Programming-Fundamentals-Assessment-2\Programming Fundamentals-Assessment 2\Main.h(1100,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Ryan Moakes\Documents\GitHub\Programming-Fundamentals-Assessment-2\Programming Fundamentals-Assessment 2\Main.h(1102,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'Main.cpp')
   
-C:\Users\Ryan Moakes\Documents\GitHub\Programming-Fundamentals-Assessment-2\Programming Fundamentals-Assessment 2\Main.h(1157,12): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Ryan Moakes\Documents\GitHub\Programming-Fundamentals-Assessment-2\Programming Fundamentals-Assessment 2\Main.h(1159,12): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'Main.cpp')
   
 C:\Users\Ryan Moakes\Documents\GitHub\Programming-Fundamentals-Assessment-2\Programming Fundamentals-Assessment 2\Class.h(23,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data

@@ -1,8 +1,10 @@
+// Class Header File holds the class selection function
 #pragma once
 #include <iostream>
 #include <string>
 using namespace std;
 
+#pragma region Class Select
 int ClassSelect()
 {
     //Inistialise Struct
@@ -81,3 +83,4 @@ int ClassSelect()
 
 
 }
+#pragma endregion

@@ -1,4 +1,5 @@
-﻿#include <iostream>
+﻿// Main.cpp : This file contains the 'main' function. Program execution begins and ends there.
+#include <iostream>
 #include <thread>
 #include <chrono>
 #include <conio.h>
@@ -19,11 +20,27 @@ void main()
 
     // Colour Handle Grabber
     HANDLE hc = GetStdHandle(STD_OUTPUT_HANDLE);
+    ifstream inputFile = ifstream("Timeline Nonsense.txt");
 
-    // Starts the main menu function holds some ascii art
-    Mainmenu();
+    //Determines if the timeline is broken or not
+    if (inputFile.good())
+    {
+        inputFile.close();
+
+        remove("Timeline Nonsense.txt");
+        // Main Menu function for if the timeline is broken
+       Mainmenu3();
+    }
+    else
+    {
+       
+        inputFile.close();
+        // Main menu function for if the timeline is not broken
+        Mainmenu();
+       
+    }
+    // Clears the console to progress 
     
-    // Clears the console to progress
     clearConsole();
 
     //Dave Starts his journey
@@ -83,6 +100,7 @@ void main()
 
         clearConsole();
 
+        // Asccii art for the class selection
         cout << R"(.*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 .*@@@@@@@@@@@#@@@%%@@@@@@@%@%@@@@@@@@@@@@@@@@@@@@%@@@@@@@@@@@@@@%%%@@@@@@@@@@@@@@@@@@@@%@@@@@%%%@*#@@@%@@@@@@
 .*@@@@@@@-::-=-.---.-#%::.:::*@@@=:::::*@@@#::.:::::::*@@@@@%=..::.::::=%@@@@*-::::-:::::#@@-:-:::::-=--:-@@@
@@ -103,6 +121,7 @@ void main()
 
         clearConsole();
        
+        // Asccii art for the class selection
         cout << R"(@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@=-.-::-=@@@@@@@+=::=::*=@@@@@@@%--==::::*%%@@@@@@@#:-..#-.:@@@@@@@@+:+=.=%%@@*=-::-::..:.::%..=%%@@@@@@@
@@ -130,6 +149,7 @@ void main()
         Sleep(2000);
         clearConsole();
 
+        // Asccii art for the class selection
         cout << R"(+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 +@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%@@@@@@@@@@@@@@@@@@@@@@@@@%@@@@@@@@@
 +@@@@@@@@@@#+--::.:::----:-#@%*-:::::-=@@@@@@@@@@@%+-:.:::::=%@@@@@@@%=-:..:::::--:=*@@@@@#=------:::::-=%@@@
@@ -154,10 +174,10 @@ void main()
         cout << '\n';
         
 
-       
+       // Converts the class function into an int
         int choice = ClassSelect();
 
-        
+        // Sets the class modifiers to 0
         int STRENGHMOD = 0;
         int CHARAISMAMOD = 0;
         int SPEEDMOD = 0;
@@ -168,15 +188,20 @@ void main()
 
 #pragma region Dave chooses his class
 
+        // If statement for the class selection (Strength)
+
         if (choice == 0)
         {
+            // Sets the class modifiers to the correct values for the class
              STRENGHMOD = STRENGHMOD + 4;
              CHARAISMAMOD = CHARAISMAMOD + 1;
              SPEEDMOD = SPEEDMOD + -2;
             
+             // Iterates through the asccii art to make it look like it is animating
+
             for (int i = 1; i < 12; i++)
             {
-                
+                // Changes the colour of the asccii art to the index of the for loop
                 SetConsoleTextAttribute(hc, i);
                 cout << R"(|--------------------------------------------------|
 |                  @@@@@@@@@@@@@@@@@@              |
@@ -335,16 +360,20 @@ void main()
             cout << '\n';
             
         }
+
+        // If statement for the class selection (Charaisma)
+        
         if (choice == 1)
         {
-          
+          // Sets the class modifiers to the correct values for the class
             STRENGHMOD = STRENGHMOD + -2;
             CHARAISMAMOD = CHARAISMAMOD + 1;
             SPEEDMOD = SPEEDMOD + 4;
             
+            // Iterates through the asccii art to make it look like it is animating
             for (int i = 1; i < 12; i++)
             {
-
+                // Changes the colour of the asccii art to the index of the for loop
                 SetConsoleTextAttribute(hc, i);
                 cout << R"(|--------------------------------------------------|
 |                  @@@@@@@@@@@@@@@@@@              |
@@ -502,16 +531,17 @@ SetConsoleTextAttribute(hc, 1);
             slowType(Text9, delayMilliseconds);
             cout << '\n';
         }
+        // If statement for the class selection (Speed)
         if (choice == 2)
         {
-           
+           // Sets the class modifiers to the correct values for the class
             STRENGHMOD = STRENGHMOD + 0;
             CHARAISMAMOD = CHARAISMAMOD + 6;
             SPEEDMOD = SPEEDMOD + 0;
            
             for (int i = 1; i < 12; i++)
             {
-
+                // Changes the colour of the asccii art to the index of the for loop
                 SetConsoleTextAttribute(hc, i);
                 cout << R"(|--------------------------------------------------|
 |                  @@@@@@@@@@@@@@@@@@              |
@@ -833,6 +863,8 @@ SetConsoleTextAttribute(hc, 1);
             slowType(Text22, delayMilliseconds);
             SetConsoleTextAttribute(hc, 7);
             cout << '\n';
+
+            // Variables for the dice roll and the choice
             int randomnum = 0;
             int choice1 = 0;
             bool choiceconfirm1 = false;
@@ -841,6 +873,7 @@ SetConsoleTextAttribute(hc, 1);
             string DAVEPASS = "DAVE PASSED";
             bool DaveKnowsRent = false;
             
+            // While loop to make sure the user enters a valid choice
             while (choiceconfirm1 == false) 
             {
                 cout << '\n';
@@ -863,14 +896,19 @@ SetConsoleTextAttribute(hc, 1);
              }
            
             }
+            // If statements for the choice the user made
             if (choice1 == 1)
             {
                 clearConsole();
 
+                //Randon number generator function is called to determine the dice roll
+
                randomnum = random(1, 20)  ;
                
+               // Quick maths innit
               Ablitynum = randomnum + STRENGHMOD;
                
+              // Feeds the random number into the dice roll function to display the correct dice roll
                Diceroll(randomnum);
 
                
@@ -885,18 +923,22 @@ SetConsoleTextAttribute(hc, 1);
                 cout << '\n';
                 if (Ablitynum < 14)
                 {
+                    // If the dice roll is less than the AC then Dave fails 
                     slowType(DAVEFAIL, delayMilliseconds);
-                    DaveKnowsRent = true;
+                    DaveKnowsRent = true; // This is a surprise tool that will help us later
                     Sleep(5000);
                     clearConsole();
+                    // Calls the function for the landlord encounter
                     LandlordFAIL();
 
                 }
                 else if (Ablitynum >= 14)
                 {
+                    // If the dice roll is more than the AC then Dave passes
                     slowType(DAVEPASS, delayMilliseconds);
                     Sleep(5000);
                     clearConsole();
+                    // Calls the function for the landlord encounter
                     LandlordSTRENGTH();
                 }
                 
@@ -905,10 +947,13 @@ SetConsoleTextAttribute(hc, 1);
             {
                 clearConsole();
 
+                //Randon number generator function is called to determine the dice roll
                 randomnum = random(1, 20);
 
+                // Quick maths innit
                 Ablitynum = randomnum + CHARAISMAMOD;
 
+                // Feeds the random number into the dice roll function to display the correct dice roll
                 Diceroll(randomnum);
 
 
@@ -923,17 +968,21 @@ SetConsoleTextAttribute(hc, 1);
                 cout << '\n';
                 if (Ablitynum < 16)
                 {
+                    // If the dice roll is less than the AC then Dave fails
                     slowType(DAVEFAIL, delayMilliseconds);
-                    DaveKnowsRent = true;
+                    DaveKnowsRent = true; // This is a surprise tool that will help us later
                     Sleep(5000);
                     clearConsole();
+                    // Calls the function for the landlord encounter
                     LandlordFAIL();
                 }
                 else if (Ablitynum >= 16)
                 {
+                    // If the dice roll is more than the AC then Dave passes
                     slowType(DAVEPASS, delayMilliseconds);
                     Sleep(5000);
                     clearConsole();
+                    // Calls the function for the landlord encounter
                     LandlordCHARISMA();
                 }
                 
@@ -942,10 +991,13 @@ SetConsoleTextAttribute(hc, 1);
             {
                 clearConsole();
 
+                //Randon number generator function is called to determine the dice roll
                 randomnum = random(1, 20);
 
+                // Quick maths innit
                 Ablitynum = randomnum + SPEEDMOD;
 
+                // Feeds the random number into the dice roll function to display the correct dice roll
                 Diceroll(randomnum);
 
 
@@ -960,18 +1012,21 @@ SetConsoleTextAttribute(hc, 1);
                 cout << '\n';
                 if (Ablitynum < 10)
                 {
+                    // If the dice roll is less than the AC then Dave fails
                     slowType(DAVEFAIL, delayMilliseconds);
-                    DaveKnowsRent = true;
+                    DaveKnowsRent = true; // This is a surprise tool that will help us later
                     Sleep(5000);
                     clearConsole();
-
+                    // Calls the function for the landlord encounter
                     LandlordFAIL();
                 }
                 else if (Ablitynum >= 10)
                 {
+                    // If the dice roll is more than the AC then Dave passes
                     slowType(DAVEPASS, delayMilliseconds);
                     Sleep(5000);
                     clearConsole();
+                    // Calls the function for the landlord encounter
                     LandlordSPEED();
                 }
                 
@@ -980,6 +1035,7 @@ SetConsoleTextAttribute(hc, 1);
 #pragma endregion
 
 #pragma region Time Starts breaking
+
             cout << R"(|----------------------------------------------------------------------------------|
 |            @@@@@@@@@                                                             |                   
 |          @@@@@@@@@@@@                                                            |                    
@@ -1177,11 +1233,15 @@ cout << R"(|------------------------------------------------------------------|
 |                                          @@@@@@   @@@@@@         |   
 |------------------------------------------------------------------|)" << '\n';
 cout << '\n';
+// Variables for the timeline stuff
+
 bool choiceconfirm2 = false;
 int choice2 = 0;
+
+// If statement to check if Dave knows about the rent
   if (DaveKnowsRent == true)
   {
-      string text33 = R"(Sorry, Mr Weightman, weird day;)";
+      string text33 = R"(Sorry, Mr Weightman, weird day;)"; // CRAIG REFERENCE
      string text34 = R"(It was £15.5242 wasn't it?)";
      
      SetConsoleTextAttribute(hc, 2);
@@ -1265,6 +1325,7 @@ SetConsoleTextAttribute(hc, 1);
 slowType(text41, delayMilliseconds);
 SetConsoleTextAttribute(hc, 7);
 cout << '\n';
+// While loop to make sure the user enters a valid choice
      while (choiceconfirm2 == false)
      {
          cout << '\n';
@@ -1287,14 +1348,17 @@ cout << '\n';
          }
 
      }
+     // If statements for the choice the user made
      if (choice2 == 1)
      {
          clearConsole();
-
+         //Randon number generator function is called to determine the dice roll
          randomnum = random(1, 20);
 
+         // Quick maths innit
          Ablitynum = randomnum + CHARAISMAMOD;
 
+         // Feeds the random number into the dice roll function to display the correct dice roll
          Diceroll(randomnum);
 
 
@@ -1313,6 +1377,7 @@ cout << '\n';
 
              Sleep(5000);
              clearConsole();
+             // Calls the function for the landlord encounter
              LandlordFAIL2();
          }
          else if (Ablitynum >= 100)
@@ -1321,14 +1386,18 @@ cout << '\n';
          }
 
      }
+     // If statements for the choice the user made
      if (choice2 == 2)
      {
          clearConsole();
 
+         //Randon number generator function is called to determine the dice roll
          randomnum = random(1, 20);
 
+         // Quick maths innit
          Ablitynum = randomnum + CHARAISMAMOD;
 
+         // Feeds the random number into the dice roll function to display the correct dice roll
          Diceroll(randomnum);
 
 
@@ -1347,6 +1416,7 @@ cout << '\n';
              
              Sleep(5000);
              clearConsole();
+             // Calls the function for the landlord encounter
              LandlordFAIL2();
          }
          else if (Ablitynum >= 12)
@@ -1354,16 +1424,17 @@ cout << '\n';
              slowType(DAVEPASS, delayMilliseconds);
              Sleep(5000);
              clearConsole();
+             // Calls the function for the landlord encounter
              LandlordCHARAISMA2();
          }
          if (choice2 == 3)
          {
              clearConsole();
-
+             //Randon number generator function is called to determine the dice roll
              randomnum = random(1, 20);
-
+             // Quick maths innit
              Ablitynum = randomnum + SPEEDMOD;
-
+             // Feeds the random number into the dice roll function to display the correct dice roll
              Diceroll(randomnum);
 
 
@@ -1382,7 +1453,7 @@ cout << '\n';
                  
                  Sleep(5000);
                  clearConsole();
-
+                 // Calls the function for the landlord encounter
                  LandlordFAIL2();
              }
              else if (Ablitynum >= 10)
@@ -1390,6 +1461,7 @@ cout << '\n';
                  slowType(DAVEPASS, delayMilliseconds);
                  Sleep(5000);
                  clearConsole();
+                 // Calls the function for the landlord encounter
                  LandlordSPEED();
              }
          }
@@ -1397,7 +1469,7 @@ cout << '\n';
 
      }
   }
-  else if (DaveKnowsRent == false)
+  else if (DaveKnowsRent == false) // If Dave doesn't know about the rent
   {
          string text42 = R"(Sorry, Mr Weightman, weird day;)";
 string text43 = R"(What do I owe?)";
@@ -1456,6 +1528,7 @@ bool correct = false;
 Sleep(2000);
 cout << endl;
 cout << endl;
+// Variables for the vector2 calculator
 float answer = 0;
 
 
@@ -1464,6 +1537,7 @@ const float X1 = 4.0;
 const float Y2 = 10.0;
 const float Y1 = 6.0;
 
+// While loop to make sure the user enters the correct answer
 while (correct == false)
 {
     cout << endl;
@@ -1471,15 +1545,17 @@ while (correct == false)
     answer = Vector2Calculator();
 
     
-
+    // Calculates the distance between the two points using a tolerance
     const double expectedDistance = sqrt((X2 - X1) * (X2 - X1) + (Y2 - Y1) * (Y2 - Y1));
     const double tolerance = 1e-6;
 
+    // If the answer is within the tolerance then the user is correct
     if (abs(answer - expectedDistance) < tolerance)
     {
         Sleep(1000);
         correct = true;
     }
+    // If the answer is not within the tolerance then the user is incorrect
     else
     {
         cout << endl;
@@ -1661,6 +1737,7 @@ clearConsole();
 cout << "Okay we lost the slowtype function, but I still cant reset the timeline..." << '\n';
 Sleep(1000);
 
+// Creates a file with the password in it
 ofstream fileStream = ofstream("DAVE'S SUPER SECRET PASSWORD.txt");
 fileStream << "Timeline Reset Password: Password123" << '\n';
 fileStream.close();
@@ -1671,12 +1748,13 @@ cout << endl;
 cout << "I cant do it from my end, its all on you Dave!" << '\n';
 Sleep(3000);
 string PASSWORD = "";
+// While loop to make sure the user enters the correct password
 while (true)
 {
 	cout << '\n';
     cout << ">";
     cin >> PASSWORD;
-    if (cin.fail())
+    if (cin.fail() || PASSWORD != "Password123")
 	{
 		cin.clear();
 		cin.ignore(1000, '\n');
@@ -1691,8 +1769,13 @@ while (true)
         Sleep(2500);
         cout << "Timeline Resetting..." << '\n';
         Sleep(2500);
+        // Deletes the file with the password in it
         remove("DAVE'S SUPER SECRET PASSWORD.txt");
         clearConsole();
+        // Creates a file a file to confirm the timeline has been reset
+        ofstream fileStream = ofstream("Timeline Nonsense.txt");
+        fileStream << "Dont Worry About It..." << '\n';
+        fileStream.close();
         break;
         
     }

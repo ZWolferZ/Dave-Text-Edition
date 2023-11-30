@@ -1,3 +1,4 @@
+// Landlord Header file holds all the landlord-outcome functions 
 #pragma once
 #include <iostream>
 #include "Main.h"
@@ -114,7 +115,7 @@ void LandlordCHARISMA()
 |------------------------------------------------------------------|)" << '\n';
 	string Text1 = "Dave, like a normal human,";
 	string Text2 = "discussed his rent issues with his landlord";
-	string Text3 = R"("Can I get a extension on my rent this month, Mr Weightman?")";
+	string Text3 = R"("Can I get a extension on my rent this month, Mr Weightman?")"; // CRAIG REFERENCE
 	string text4 = " - Dave remarked, charismatically";
 	cout << '\n';
 	slowType(Text1, delayMilliseconds);
@@ -269,6 +270,7 @@ void LandlordFAIL()
 	cout << '\n';
 	Sleep(2500);
 	clearConsole();
+	//Dave failed to do his action so he must do a calculation to get out of this situation, 
 	cout << R"(
 |------------------------------------------------------|
 |             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     |        
@@ -316,6 +318,7 @@ void LandlordFAIL()
 	Sleep(2000);
 	cout << endl;
 	cout << endl;
+	//Variables for the calculation
 	float answer = 0;
 	
 
@@ -324,6 +327,7 @@ void LandlordFAIL()
     const float Y2 = 10.0;
     const float Y1 = 6.0;
 
+	//While loop to check if the answer is correct
 while (correct == false)
 {
     cout << endl;
@@ -334,6 +338,8 @@ while (correct == false)
 
     const double expectedDistance = sqrt((X2 - X1) * (X2 - X1) + (Y2 - Y1) * (Y2 - Y1));
 	const double tolerance = 1e-6;
+	
+	//Checks the for the answer againts the expected distance using the tolerance
 
 	if (abs(answer - expectedDistance) < tolerance)
 	{
