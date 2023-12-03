@@ -1,6 +1,12 @@
 ﻿  Main.cpp
-C:\Users\m015485n\Documents\GitHub\Programming Fundamentals-Assessment 2\Main.h(1101,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-C:\Users\m015485n\Documents\GitHub\Programming Fundamentals-Assessment 2\Main.h(1158,12): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-C:\Users\m015485n\Documents\GitHub\Programming Fundamentals-Assessment 2\Class.h(26,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\m015485n\Documents\GitHub\Programming Fundamentals-Assessment 2\Main.cpp(16,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  Programming Fundamentals-Assessment 2.vcxproj -> C:\Users\m015485n\Documents\GitHub\x64\Debug\Programming Fundamentals-Assessment 2.exe
+C:\Users\Ryan Moakes\Documents\GitHub\Programming-Fundamentals-Assessment-2\Programming Fundamentals-Assessment 2\Main.h(1101,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'Main.cpp')
+  
+C:\Users\Ryan Moakes\Documents\GitHub\Programming-Fundamentals-Assessment-2\Programming Fundamentals-Assessment 2\Main.h(1158,12): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'Main.cpp')
+  
+C:\Users\Ryan Moakes\Documents\GitHub\Programming-Fundamentals-Assessment-2\Programming Fundamentals-Assessment 2\Class.h(26,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'Main.cpp')
+  
+C:\Users\Ryan Moakes\Documents\GitHub\Programming-Fundamentals-Assessment-2\Programming Fundamentals-Assessment 2\Main.cpp(16,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Programming Fundamentals-Assessment 2.vcxproj -> C:\Users\Ryan Moakes\Documents\GitHub\Programming-Fundamentals-Assessment-2\x64\Debug\Programming Fundamentals-Assessment 2.exe
